@@ -5,8 +5,8 @@ class Car():
     front_wheels = FrontWheels()
     back_wheels = BackWheels()   
            
-    def drive(self,f_speed: int = 0, f_time: int = 0, b_speed: int = 0, b_time: int = 0):
-        """Drive
+    def test_drive(self,f_speed: int = 0, f_time: int = 0, b_speed: int = 0, b_time: int = 0):
+        """ test_drive
         Args:
         f_time (int): Time to drive forwards
         f_speed (int): Speed forwards
@@ -27,7 +27,7 @@ class Car():
       
 def start():  
     car = Car() 
-    car.drive(20, 3, 20, 3)    
+    car.test_drive(20, 3, 20, 3)    
 
 if __name__ == "__main__":
     start()
