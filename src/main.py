@@ -27,7 +27,7 @@ class Car():
       
 def start():  
     car = Car() 
-    car.drive(30, 3, 30, 3)    
+    car.drive(20, 3, 20, 3)    
 
 if __name__ == "__main__":
     start()
