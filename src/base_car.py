@@ -1,19 +1,13 @@
 from basisklassen import *
-import json
 
 class BaseCar():              
     
-    def __init__(self, config="config.json"):
-        
-        with open(config, "r") as f:
-            data = json.load(f)
-            turning_offset = data["turning_offset"]
-            forward_A = data["forward_A"]
-            forward_B = data["forward_B"]
+    def __init__(self):               
             
-        self.__steering_angle = 90 
         self.front_wheels = FrontWheels()
         self.back_wheels = BackWheels() 
+        self.front_wheels.turn(90)
+        self.__steering_angle = 90 
         
     
     @property
@@ -25,7 +19,7 @@ class BaseCar():
     def steering_angle(self, value) -> None:
         self.__steering_angle = value
         self.front_wheels.turn(value)
-        print(f"Sreering angle set to {value}°")
+        print(f"Steering angle set to {value}°")
         
     def drive_forward(self, value: int = 0) -> None:
         '''
