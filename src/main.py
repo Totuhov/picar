@@ -5,4 +5,5 @@ if __name__ == "__main__":
     car = BaseCar()   
      
     fp = Fahrparkur(car)
+    fp.fahrparkur_1()
     fp.fahrparkur_2()
