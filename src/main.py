@@ -1,9 +1,11 @@
 from fahrparkur import Fahrparkur
 from base_car import BaseCar
 
-if __name__ == "__main__":
+def run():
     car = BaseCar()   
      
     fp = Fahrparkur(car)
-    fp.fahrparkur_1()
     fp.fahrparkur_2()
+    
+if __name__ == "__main__":
+    run()
