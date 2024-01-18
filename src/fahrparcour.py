@@ -80,17 +80,5 @@ class Fahrparkur():
         car.steering_angle = 90
     
     def fahrparkur_test(self) -> None:
-        
-        car = self.car
-        while car.steering_angle > 45:
-            car.steering_angle = car.steering_angle - 5
-            time.sleep(0.2)
-            
-        while car.steering_angle < 135:
-            car.steering_angle = car.steering_angle + 5
-            time.sleep(0.2)
-            
-        while car.steering_angle > 90:
-            car.steering_angle = car.steering_angle - 5
-            time.sleep(0.2)
-            
+        pass
+         

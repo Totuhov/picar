@@ -1,12 +1,15 @@
-from fahrparcour import Fahrparkur
+
 from base_car import BaseCar
 from sonic_car import SonicCar
 
 def run():
-    car = SonicCar()       
-    fp = Fahrparkur(car)
-    # fp.fahrparkur_1()
-    car.run_until_obstacle_detected()
+    car = SonicCar()
+    try:
+        car.run_exploration_tour()
+    except Exception as ex:
+        print(f"Something's wrong! {ex}")
+        car.drive_stop()
+        raise
     
 if __name__ == "__main__":
     run()
