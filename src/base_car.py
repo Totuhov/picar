@@ -4,16 +4,29 @@ class BaseCar():
     
     def __init__(self):               
             
-        self.front_wheels = FrontWheels()
-        self.back_wheels = BackWheels() 
-        self.front_wheels.turn(90)
+        
         self.__steering_angle = 90 
         self.__speed = 0
+        self.__direction = "P" 
+        
+        with open("config.json", "r") as f:
+            data = json.load(f)
+            turning_offset = data["turning_offset"]
+            forward_A = data["forward_A"]
+            forward_B = data["forward_B"]
+            
+        
+        self._turning_offset = turning_offset
+        self._forward_A = forward_A
+        self._forward_B = forward_B
+            
+        self.front_wheels = FrontWheels(turning_offset=self._turning_offset)
+        self.back_wheels = BackWheels(forward_A=self._forward_A, forward_B=self._forward_B) 
+        self.front_wheels.turn(90)
         
     
     @property
     def steering_angle(self) -> int:        
-        print(f"Steering angle: {self.__steering_angle}°")
         return self.__steering_angle
     
     @steering_angle.setter
@@ -28,6 +41,7 @@ class BaseCar():
         Args:
         value (int): Speed
         '''
+        self.__direction = "D"
         if value <= 0:
             raise Exception("The value of speed schould be positiv number")
         else:            
@@ -42,6 +56,7 @@ class BaseCar():
         Args:
         value (int): Speed
         '''
+        self.__direction = "R"
         if value <= 0:
             raise Exception("The value of speed schould be positiv number")
         else:            
@@ -56,6 +71,7 @@ class BaseCar():
         Stops motor        
         '''
         self.set_speed(0)
+        self.__direction = "P"
         print("Car stops")
     
     def get_speed(self) -> int:
@@ -66,23 +82,8 @@ class BaseCar():
         self.back_wheels.speed = self.__speed
     
     def get_direction(self) -> int:
-        return self.back_wheels.forward_A         
+        return self.__direction       
 
-    def test_weels(self):
-        print("Start wheels test")
-        car = self.car        
-        car.steering_angle = 45
-        time.sleep(.5)
-        car.steering_angle = 90
-        time.sleep(.5)
-        car.steering_angle = 115
-        time.sleep(.5)
-        car.steering_angle= 125
-        time.sleep(.5)
-        car.steering_angle = 135
-        time.sleep(.5)
-        car.steering_angle = 90
-        print("End wheels test")
         
     def fahrparkur_1(self) -> None: 
         time.sleep(1)
@@ -139,6 +140,4 @@ class BaseCar():
         time.sleep(4) 
         car.drive_stop()
         car.steering_angle = 90
-    
-    def fahrparkur_test(self) -> None:
-        pass
+ 

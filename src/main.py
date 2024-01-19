@@ -1,5 +1,3 @@
-
-from base_car import BaseCar
 from sonic_car import SonicCar
 
 def run():
