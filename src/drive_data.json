@@ -1,723 +1,1101 @@
 [
   {
     "speed": 0,
-    "obsticle_dist": 81.33333333333333,
+    "obsticle_dist": 50.0,
     "wheels_angle": 90,
     "direction": "P",
-    "time": "16:36:56.515"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 76.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:56.642"
+    "time": "15:12:01.928"
   },
   {
     "speed": 30,
-    "obsticle_dist": 76.33333333333333,
-    "wheels_angle": 100,
-    "direction": "D",
-    "time": "16:36:56.744"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 92.33333333333333,
-    "wheels_angle": 92,
-    "direction": "D",
-    "time": "16:36:56.849"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 61.666666666666664,
-    "wheels_angle": 87,
-    "direction": "D",
-    "time": "16:36:56.954"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 68.66666666666667,
-    "wheels_angle": 82,
-    "direction": "D",
-    "time": "16:36:57.053"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 59.666666666666664,
-    "wheels_angle": 77,
-    "direction": "D",
-    "time": "16:36:57.157"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 56.333333333333336,
-    "wheels_angle": 82,
-    "direction": "D",
-    "time": "16:36:57.253"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 56.0,
-    "wheels_angle": 84,
-    "direction": "D",
-    "time": "16:36:57.349"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 58.0,
-    "wheels_angle": 91,
-    "direction": "D",
-    "time": "16:36:57.444"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 133.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:57.555"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 163.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:57.678"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 242.33333333333334,
-    "wheels_angle": 100,
-    "direction": "D",
-    "time": "16:36:57.803"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 80.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:57.971"
-  },
-  {
-    "speed": 0,
-    "obsticle_dist": 111.66666666666667,
-    "wheels_angle": 45,
-    "direction": "P",
-    "time": "16:36:58.055"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 58.333333333333336,
-    "wheels_angle": 90,
-    "direction": "R",
-    "time": "16:36:59.166"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 59.666666666666664,
-    "wheels_angle": 94,
-    "direction": "D",
-    "time": "16:36:59.263"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 105.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:59.368"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 99.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:59.494"
-  },
-  {
-    "speed": 45,
-    "obsticle_dist": 288.3333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:59.611"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 158.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:59.790"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 91.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:36:59.924"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 106.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.036"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 117.0,
-    "wheels_angle": 98,
-    "direction": "D",
-    "time": "16:37:00.148"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 99.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.264"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 145.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.375"
-  },
-  {
-    "speed": 45,
-    "obsticle_dist": 101.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.494"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 149.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.606"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 191.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.725"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 101.33333333333333,
+    "obsticle_dist": 46.5,
     "wheels_angle": 95,
     "direction": "D",
-    "time": "16:37:00.851"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 105.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:00.962"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 118.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:01.079"
-  },
-  {
-    "speed": 45,
-    "obsticle_dist": 82.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:01.194"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 110.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:01.310"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 96.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:01.431"
+    "time": "15:12:01.997"
   },
   {
     "speed": 30,
-    "obsticle_dist": 97.0,
-    "wheels_angle": 93,
+    "obsticle_dist": 47.0,
+    "wheels_angle": 96,
     "direction": "D",
-    "time": "16:37:01.549"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 143.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:01.662"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 94.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:01.781"
+    "time": "15:12:02.050"
   },
   {
     "speed": 30,
-    "obsticle_dist": 178.66666666666666,
-    "wheels_angle": 94,
+    "obsticle_dist": 47.0,
+    "wheels_angle": 89,
     "direction": "D",
-    "time": "16:37:01.890"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 86.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:02.015"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 124.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:02.130"
+    "time": "15:12:02.106"
   },
   {
     "speed": 30,
-    "obsticle_dist": 99.33333333333333,
-    "wheels_angle": 100,
+    "obsticle_dist": 47.0,
+    "wheels_angle": 89,
     "direction": "D",
-    "time": "16:37:02.244"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 126.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:02.355"
+    "time": "15:12:02.128"
   },
   {
     "speed": 30,
-    "obsticle_dist": 136.66666666666666,
-    "wheels_angle": 88,
-    "direction": "D",
-    "time": "16:37:02.470"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 157.33333333333334,
-    "wheels_angle": 97,
-    "direction": "D",
-    "time": "16:37:02.585"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 97.33333333333333,
-    "wheels_angle": 105,
-    "direction": "D",
-    "time": "16:37:02.705"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 106.0,
-    "wheels_angle": 109,
-    "direction": "D",
-    "time": "16:37:02.814"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 150.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:02.931"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 107.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:03.052"
-  },
-  {
-    "speed": 45,
-    "obsticle_dist": 112.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:03.167"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 153.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:03.289"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 132.66666666666666,
-    "wheels_angle": 95,
-    "direction": "D",
-    "time": "16:37:03.407"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 182.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:03.526"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 59.666666666666664,
-    "wheels_angle": 98,
-    "direction": "D",
-    "time": "16:37:03.644"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 58.333333333333336,
-    "wheels_angle": 101,
-    "direction": "D",
-    "time": "16:37:03.741"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 59.0,
-    "wheels_angle": 101,
-    "direction": "D",
-    "time": "16:37:03.837"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 53.0,
-    "wheels_angle": 100,
-    "direction": "D",
-    "time": "16:37:03.933"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 59.666666666666664,
-    "wheels_angle": 105,
-    "direction": "D",
-    "time": "16:37:04.028"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 60.666666666666664,
-    "wheels_angle": 108,
-    "direction": "D",
-    "time": "16:37:04.124"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 59.666666666666664,
-    "wheels_angle": 113,
-    "direction": "D",
-    "time": "16:37:04.221"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 57.333333333333336,
-    "wheels_angle": 108,
-    "direction": "D",
-    "time": "16:37:04.317"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 54.666666666666664,
-    "wheels_angle": 105,
-    "direction": "D",
-    "time": "16:37:04.412"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 52.333333333333336,
-    "wheels_angle": 102,
-    "direction": "D",
-    "time": "16:37:04.507"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 168.0,
+    "obsticle_dist": 48.0,
     "wheels_angle": 99,
     "direction": "D",
-    "time": "16:37:04.604"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 124.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:04.733"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 14.333333333333334,
-    "wheels_angle": 81,
-    "direction": "D",
-    "time": "16:37:04.844"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 12.666666666666666,
-    "wheels_angle": 81,
-    "direction": "D",
-    "time": "16:37:04.936"
-  },
-  {
-    "speed": 0,
-    "obsticle_dist": 11.333333333333334,
-    "wheels_angle": 45,
-    "direction": "P",
-    "time": "16:37:05.008"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 225.0,
-    "wheels_angle": 90,
-    "direction": "R",
-    "time": "16:37:06.570"
-  },
-  {
-    "speed": 35,
-    "obsticle_dist": 137.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:06.717"
-  },
-  {
-    "speed": 40,
-    "obsticle_dist": 176.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:06.847"
-  },
-  {
-    "speed": 45,
-    "obsticle_dist": 138.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:06.990"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 161.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.119"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 146.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.257"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 162.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.391"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 151.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.522"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 118.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.662"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 99.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.795"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 116.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:07.918"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 165.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.049"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 148.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.180"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 180.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.315"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 168.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.446"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 142.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.575"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 101.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.698"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 96.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.814"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 98.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:08.935"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 120.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.051"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 145.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.175"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 180.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.302"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 178.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.429"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 115.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.563"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 118.33333333333333,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.692"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 140.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.815"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 142.33333333333334,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:09.947"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 143.0,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:10.073"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 143.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:10.204"
-  },
-  {
-    "speed": 50,
-    "obsticle_dist": 121.66666666666667,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "16:37:10.329"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 100.33333333333333,
-    "wheels_angle": 84,
-    "direction": "D",
-    "time": "16:37:10.440"
-  },
-  {
-    "speed": 30,
-    "obsticle_dist": 57.666666666666664,
-    "wheels_angle": 93,
-    "direction": "D",
-    "time": "16:37:10.543"
+    "time": "15:12:02.161"
   },
   {
     "speed": 30,
     "obsticle_dist": 56.666666666666664,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:02.215"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 54.666666666666664,
+    "wheels_angle": 100,
+    "direction": "D",
+    "time": "15:12:02.268"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.666666666666664,
+    "wheels_angle": 107,
+    "direction": "D",
+    "time": "15:12:02.320"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.666666666666664,
+    "wheels_angle": 107,
+    "direction": "D",
+    "time": "15:12:02.329"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 50.666666666666664,
+    "wheels_angle": 97,
+    "direction": "D",
+    "time": "15:12:02.373"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 83.33333333333333,
+    "wheels_angle": 105,
+    "direction": "D",
+    "time": "15:12:02.431"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 79.66666666666667,
+    "wheels_angle": 97,
+    "direction": "D",
+    "time": "15:12:02.489"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 79.66666666666667,
+    "wheels_angle": 97,
+    "direction": "D",
+    "time": "15:12:02.529"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 82.0,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:02.547"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.0,
+    "wheels_angle": 89,
+    "direction": "D",
+    "time": "15:12:02.601"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.333333333333336,
+    "wheels_angle": 91,
+    "direction": "D",
+    "time": "15:12:02.655"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.333333333333336,
+    "wheels_angle": 92,
+    "direction": "D",
+    "time": "15:12:02.707"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.333333333333336,
+    "wheels_angle": 92,
+    "direction": "D",
+    "time": "15:12:02.729"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 50.333333333333336,
+    "wheels_angle": 82,
+    "direction": "D",
+    "time": "15:12:02.768"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 62.666666666666664,
+    "wheels_angle": 73,
+    "direction": "D",
+    "time": "15:12:02.832"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 52.0,
+    "wheels_angle": 76,
+    "direction": "D",
+    "time": "15:12:02.895"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 52.0,
+    "wheels_angle": 76,
+    "direction": "D",
+    "time": "15:12:02.929"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 49.666666666666664,
+    "wheels_angle": 69,
+    "direction": "D",
+    "time": "15:12:02.956"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 58.666666666666664,
+    "wheels_angle": 71,
+    "direction": "D",
+    "time": "15:12:03.019"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 66.0,
+    "wheels_angle": 75,
+    "direction": "D",
+    "time": "15:12:03.075"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 79.66666666666667,
+    "wheels_angle": 75,
+    "direction": "D",
+    "time": "15:12:03.135"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 79.66666666666667,
+    "wheels_angle": 69,
+    "direction": "D",
+    "time": "15:12:03.138"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 71.33333333333333,
+    "wheels_angle": 78,
+    "direction": "D",
+    "time": "15:12:03.194"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 64.66666666666667,
+    "wheels_angle": 80,
+    "direction": "D",
+    "time": "15:12:03.250"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 35.0,
+    "wheels_angle": 83,
+    "direction": "D",
+    "time": "15:12:03.301"
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 83,
+    "direction": "P",
+    "time": "15:12:03.336"
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 45,
+    "direction": "P",
+    "time": "15:12:03.338"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:03.536"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:03.736"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:03.936"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:04.136"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 2.0,
+    "wheels_angle": 135,
+    "direction": "R",
+    "time": "15:12:04.253"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 65.33333333333333,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:04.308"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 65.33333333333333,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:04.337"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.333333333333336,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:04.360"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 60.0,
+    "wheels_angle": 129,
+    "direction": "D",
+    "time": "15:12:04.415"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 61.666666666666664,
+    "wheels_angle": 121,
+    "direction": "D",
+    "time": "15:12:04.472"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.666666666666664,
+    "wheels_angle": 131,
+    "direction": "D",
+    "time": "15:12:04.524"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.666666666666664,
+    "wheels_angle": 131,
+    "direction": "D",
+    "time": "15:12:04.538"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 55.333333333333336,
+    "wheels_angle": 134,
+    "direction": "D",
+    "time": "15:12:04.578"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.333333333333336,
+    "wheels_angle": 127,
+    "direction": "D",
+    "time": "15:12:04.631"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 49.0,
+    "wheels_angle": 130,
+    "direction": "D",
+    "time": "15:12:04.686"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 50.0,
+    "wheels_angle": 123,
+    "direction": "D",
+    "time": "15:12:04.738"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 50.0,
+    "wheels_angle": 123,
+    "direction": "D",
+    "time": "15:12:04.739"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.333333333333336,
+    "wheels_angle": 120,
+    "direction": "D",
+    "time": "15:12:04.791"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 49.333333333333336,
+    "wheels_angle": 115,
+    "direction": "D",
+    "time": "15:12:04.843"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.333333333333336,
+    "wheels_angle": 123,
+    "direction": "D",
+    "time": "15:12:04.897"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 51.0,
+    "wheels_angle": 123,
+    "direction": "D",
+    "time": "15:12:04.944"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 51.0,
+    "wheels_angle": 115,
+    "direction": "D",
+    "time": "15:12:04.953"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 49.333333333333336,
+    "wheels_angle": 112,
+    "direction": "D",
+    "time": "15:12:05.005"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 49.666666666666664,
+    "wheels_angle": 116,
+    "direction": "D",
+    "time": "15:12:05.059"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 67.66666666666667,
+    "wheels_angle": 107,
+    "direction": "D",
+    "time": "15:12:05.117"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 67.66666666666667,
+    "wheels_angle": 107,
+    "direction": "D",
+    "time": "15:12:05.145"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 61.666666666666664,
+    "wheels_angle": 116,
+    "direction": "D",
+    "time": "15:12:05.176"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 63.0,
+    "wheels_angle": 124,
+    "direction": "D",
+    "time": "15:12:05.237"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 75.0,
+    "wheels_angle": 127,
+    "direction": "D",
+    "time": "15:12:05.294"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 69.0,
+    "wheels_angle": 127,
+    "direction": "D",
+    "time": "15:12:05.349"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 69.0,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:05.351"
+  },
+  {
+    "speed": 35,
+    "obsticle_dist": 102.0,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.412"
+  },
+  {
+    "speed": 40,
+    "obsticle_dist": 139.5,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.477"
+  },
+  {
+    "speed": 45,
+    "obsticle_dist": 129.0,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.545"
+  },
+  {
+    "speed": 45,
+    "obsticle_dist": 129.0,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.549"
+  },
+  {
+    "speed": 50,
+    "obsticle_dist": 155.33333333333334,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.617"
+  },
+  {
+    "speed": 50,
+    "obsticle_dist": 120.66666666666667,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.683"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 87.0,
+    "wheels_angle": 87,
+    "direction": "D",
+    "time": "15:12:05.746"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 87.0,
+    "wheels_angle": 87,
+    "direction": "D",
+    "time": "15:12:05.749"
+  },
+  {
+    "speed": 35,
+    "obsticle_dist": 157.33333333333334,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:05.820"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 87.33333333333333,
+    "wheels_angle": 94,
+    "direction": "D",
+    "time": "15:12:05.881"
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "P",
+    "time": "15:12:05.920"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:05.949"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:06.149"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:06.350"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:06.550"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:06.750"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:06.950"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:07.151"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:07.351"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:07.551"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:07.751"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 12.333333333333334,
+    "wheels_angle": 135,
+    "direction": "R",
+    "time": "15:12:07.877"
+  },
+  {
+    "speed": 35,
+    "obsticle_dist": 110.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:07.940"
+  },
+  {
+    "speed": 35,
+    "obsticle_dist": 110.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "15:12:07.954"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 80.33333333333333,
+    "wheels_angle": 92,
+    "direction": "D",
+    "time": "15:12:07.999"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 64.33333333333333,
+    "wheels_angle": 100,
+    "direction": "D",
+    "time": "15:12:08.064"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 78.0,
     "wheels_angle": 96,
     "direction": "D",
-    "time": "16:37:10.638"
+    "time": "15:12:08.130"
   },
   {
     "speed": 30,
-    "obsticle_dist": 55.333333333333336,
-    "wheels_angle": 98,
+    "obsticle_dist": 78.0,
+    "wheels_angle": 96,
     "direction": "D",
-    "time": "16:37:10.733"
+    "time": "15:12:08.154"
   },
   {
     "speed": 30,
-    "obsticle_dist": 55.333333333333336,
-    "wheels_angle": 106,
+    "obsticle_dist": 65.33333333333333,
+    "wheels_angle": 92,
     "direction": "D",
-    "time": "16:37:10.828"
+    "time": "15:12:08.192"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 77.66666666666667,
+    "wheels_angle": 83,
+    "direction": "D",
+    "time": "15:12:08.259"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.0,
+    "wheels_angle": 78,
+    "direction": "D",
+    "time": "15:12:08.321"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.0,
+    "wheels_angle": 78,
+    "direction": "D",
+    "time": "15:12:08.354"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.666666666666664,
+    "wheels_angle": 79,
+    "direction": "D",
+    "time": "15:12:08.393"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 48.333333333333336,
+    "wheels_angle": 75,
+    "direction": "D",
+    "time": "15:12:08.455"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 46.0,
+    "wheels_angle": 84,
+    "direction": "D",
+    "time": "15:12:08.518"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 46.0,
+    "wheels_angle": 84,
+    "direction": "D",
+    "time": "15:12:08.555"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.333333333333336,
+    "wheels_angle": 91,
+    "direction": "D",
+    "time": "15:12:08.577"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 47.5,
+    "wheels_angle": 99,
+    "direction": "D",
+    "time": "15:12:08.640"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 73.0,
+    "wheels_angle": 99,
+    "direction": "D",
+    "time": "15:12:08.705"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 55.666666666666664,
+    "wheels_angle": 99,
+    "direction": "D",
+    "time": "15:12:08.757"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 55.666666666666664,
+    "wheels_angle": 93,
+    "direction": "D",
+    "time": "15:12:08.766"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 84.66666666666667,
+    "wheels_angle": 85,
+    "direction": "D",
+    "time": "15:12:08.830"
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "P",
+    "time": "15:12:08.868"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:08.957"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:09.157"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:09.358"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:09.558"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:09.758"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:09.958"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:10.158"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:10.358"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:10.559"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 45,
+    "direction": "R",
+    "time": "15:12:10.759"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 5.333333333333333,
+    "wheels_angle": 135,
+    "direction": "R",
+    "time": "15:12:10.859"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 132,
+    "direction": "D",
+    "time": "15:12:10.915"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 132,
+    "direction": "D",
+    "time": "15:12:10.964"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:10.967"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:11.019"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:11.070"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 49.333333333333336,
+    "wheels_angle": 130,
+    "direction": "D",
+    "time": "15:12:11.126"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.333333333333336,
+    "wheels_angle": 130,
+    "direction": "D",
+    "time": "15:12:11.165"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.333333333333336,
+    "wheels_angle": 126,
+    "direction": "D",
+    "time": "15:12:11.178"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:11.231"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:11.282"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 126,
+    "direction": "D",
+    "time": "15:12:11.333"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 126,
+    "direction": "D",
+    "time": "15:12:11.365"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 40.666666666666664,
+    "wheels_angle": 123,
+    "direction": "D",
+    "time": "15:12:11.385"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 133,
+    "direction": "D",
+    "time": "15:12:11.436"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 131,
+    "direction": "D",
+    "time": "15:12:11.487"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 125,
+    "direction": "D",
+    "time": "15:12:11.538"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 125,
+    "direction": "D",
+    "time": "15:12:11.566"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.333333333333336,
+    "wheels_angle": 117,
+    "direction": "D",
+    "time": "15:12:11.589"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 107,
+    "direction": "D",
+    "time": "15:12:11.641"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 114,
+    "direction": "D",
+    "time": "15:12:11.695"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.333333333333336,
+    "wheels_angle": 124,
+    "direction": "D",
+    "time": "15:12:11.748"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.333333333333336,
+    "wheels_angle": 124,
+    "direction": "D",
+    "time": "15:12:11.766"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 125,
+    "direction": "D",
+    "time": "15:12:11.802"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 131,
+    "direction": "D",
+    "time": "15:12:11.855"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:11.908"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 125,
+    "direction": "D",
+    "time": "15:12:11.961"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 125,
+    "direction": "D",
+    "time": "15:12:11.966"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.333333333333336,
+    "wheels_angle": 131,
+    "direction": "D",
+    "time": "15:12:12.015"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.333333333333336,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:12.067"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 127,
+    "direction": "D",
+    "time": "15:12:12.120"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 127,
+    "direction": "D",
+    "time": "15:12:12.167"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:12.183"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.333333333333336,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:12.234"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 128,
+    "direction": "D",
+    "time": "15:12:12.285"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:12.337"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.666666666666664,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:12.367"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 41.333333333333336,
+    "wheels_angle": 135,
+    "direction": "D",
+    "time": "15:12:12.388"
+  },
+  {
+    "speed": 30,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 127,
+    "direction": "D",
+    "time": "15:12:12.440"
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 42.0,
+    "wheels_angle": 127,
+    "direction": "P",
+    "time": "15:12:12.567"
   }
 ]

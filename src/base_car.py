@@ -2,8 +2,7 @@ from basisklassen import *
 
 class BaseCar():              
     
-    def __init__(self):               
-            
+    def __init__(self):             
         
         self.__steering_angle = 90 
         self.__speed = 0
@@ -31,6 +30,10 @@ class BaseCar():
     
     @steering_angle.setter
     def steering_angle(self, value) -> None:
+        if value < 45:
+            value = 45
+        elif value > 135:
+            value = 135
         self.__steering_angle = value
         self.front_wheels.turn(value)
         print(f"Steering angle set to {value}°")
@@ -87,57 +90,70 @@ class BaseCar():
         
     def fahrparkur_1(self) -> None: 
         time.sleep(1)
-        car = self.car
-        car.steering_angle = 90
+        self.steering_angle = 90
         time.sleep(1)
-        car.drive_forward(20)   
+        self.drive_forward(20)   
         time.sleep(3)
-        car.drive_stop() 
+        self.drive_stop() 
         time.sleep(1) 
-        car.drive_backward(20)   
+        self.drive_backward(20)   
         time.sleep(3)      
-        car.drive_stop()       
+        self.drive_stop()       
     
     def fahrparkur_2(self) -> None: 
         time.sleep(1)
-        car = self.car
-        car.steering_angle = 90
+        self.steering_angle = 90
         
         # Das Auto fährt 1 Sekunde geradeaus
-        car.drive_forward(40)   
+        self.drive_forward(40)   
         time.sleep(1)
         
         # dann für 8 Sekunden mit maximalen Lenkwinkel im Uhrzeigersinn
-        car.steering_angle = 45 
+        self.steering_angle = 45 
         time.sleep(4)
-        car.steering_angle = 46
+        self.steering_angle = 46
         time.sleep(4)                
-        car.drive_stop() # und stoppt.
+        self.drive_stop() # und stoppt.
         time.sleep(1)
         
         # Dann soll das Auto diesen Fahrplan in umgekehrter Weise abfahren und an den Aus‑gangspunkt zurückkehren
-        car.steering_angle = 45 
-        car.drive_backward(40)
+        self.steering_angle = 45 
+        self.drive_backward(40)
         time.sleep(4)
-        car.steering_angle = 46
+        self.steering_angle = 46
         time.sleep(4) 
-        car.drive_stop()
+        self.drive_stop()
         time.sleep(1)
         
         # Die Vorgehensweise soll für eine Fahrt im entgegengesetzten Uhrzeigersinn wiederholt werden.
-        car.steering_angle = 135
-        car.drive_forward(40)
+        self.steering_angle = 135
+        self.drive_forward(40)
         time.sleep(4)
-        car.steering_angle = 134
+        self.steering_angle = 134
         time.sleep(4)
-        car.drive_stop()
+        self.drive_stop()
         time.sleep(1)
         
-        car.steering_angle = 135
-        car.drive_backward(40)
+        self.steering_angle = 135
+        self.drive_backward(40)
         time.sleep(4)
-        car.steering_angle = 134
+        self.steering_angle = 134
         time.sleep(4) 
-        car.drive_stop()
-        car.steering_angle = 90
+        self.drive_stop()
+        self.steering_angle = 90
+        
+    def test_front_wheels(self):
+        self.steering_angle = 90
+        time.sleep(0.5)
+        self.steering_angle = 45
+        time.sleep(0.5)
+        self.steering_angle = 90
+        time.sleep(0.5)
+        self.steering_angle = 135
+        time.sleep(0.5)
+        self.steering_angle = 90
+        time.sleep(0.5)
+        self.steering_angle = 135
+        time.sleep(0.5)
+        self.steering_angle = 90
  
