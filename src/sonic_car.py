@@ -43,13 +43,16 @@ class SonicCar(BaseCar):
                              loops: int=100, 
                              random_direction: bool=True,
                              high_speed: bool=True,
-                             ): 
+                             ):
+        self.emergency_stop = False 
         self.start_event.wait()  
         self.steering_angle = 90
         self.set_speed(init_speed)
         self.drive_forward(self.get_speed())      
         
-        for i in range(loops):   
+        for i in range(loops):  
+            if self.emergency_stop == True: 
+                break 
             self._distance = self.distance()
                
             print(f"Obsticle detected at {self._distance} cm.")               

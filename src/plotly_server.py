@@ -4,11 +4,9 @@ import pandas as pd
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
-import threading
-import time
+from sensor_car import SensorCar
 
-from sonic_car import SonicCar
-
+car = SensorCar()
 
 data_service = DataService("drive_data.json")
 data = data_service.read_data()
@@ -17,56 +15,23 @@ df = pd.DataFrame(data)
 
 app = dash.Dash(__name__)
 
-
 app.layout = html.Div(
     [ 
-    html.Button(id="f1_btn", type="button", children="Start Fahrparcour 1", style={"display": "flex", "margin": "1rem auto"}),
-    html.Button(id="f2_btn", type="button", children="Start Fahrparcour 2", style={"display": "flex", "margin": "1rem auto"}), 
-    html.Button(id="f3_btn", type="button", children="Start Fahrparcour 3", style={"display": "flex", "margin": "1rem auto"}), 
-    html.Button(id="f4_btn", type="button", children="Start Fahrparcour 4", style={"display": "flex", "margin": "1rem auto"}),     
-    html.H1(children="Last Run", style={"textAlign": "center"}),
-    dcc.Graph(id="speed_graph",
-        figure={
-            'data': [
-                {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
-            ],
-            'layout': {
-                'title': 'Speed',
-                'xaxis': {
-                'tickangle': 45,
-                'tickmode': 'auto'},
-                'yaxis': {'title': 'Speed'}
-            }
-        }
-    ),
-    dcc.Graph(id="obsticle_graph",
-        figure={
-            'data': [
-                {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance'},
-            ],
-            'layout': {
-                'title': 'Obstacle Distance',
-                'xaxis': {
-                'tickangle': 45,
-                'tickmode': 'auto'},
-                'yaxis': {'title': 'Obstacle Distance'}
-            }
-        }
-    ),
-    dcc.Graph(id="steering_graph",
-        figure={
-            'data': [
-                {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Wheel Angle'},
-            ],
-            'layout': {
-                'title': 'Steering Angle',
-                'xaxis': {
-                'tickangle': 45,
-                'tickmode': 'auto'},
-                'yaxis': {'title': 'Steering Angle'}
-            }
-        }
-    ),
+    html.Button(id="f1_btn", type="button", children="Start Fahrparcour 1", style={"position": "fixed", "top": "1rem", "left": "1rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
+    
+    html.Button(id="f2_btn", type="button", children="Start Fahrparcour 2", style={"position": "fixed", "top": "1rem", "left": "11rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
+    
+    html.Button(id="f3_btn", type="button", children="Start Fahrparcour 3", style={"position": "fixed", "top": "1rem", "left": "21rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
+    
+    html.Button(id="f4_btn", type="button", children="Start Fahrparcour 4", style={"position": "fixed", "top": "1rem", "left": "31rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
+    
+    html.Button(id="f5_btn", type="button", children="Start IR-Sensor Test", style={"position": "fixed", "top": "1rem", "left": "41rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
+    
+    html.Button(id="f6_btn", type="button", children="Start Final Test", style={"position": "fixed", "top": "1rem", "left": "51rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
+    
+    html.Button(id="stop_btn", type="button", children="Emergency Stop", style={"position": "fixed", "top": "5rem", "left": "1rem", "padding": "4rem 1.5rem", "backgroundColor": "#FF6868", "color": "#FFF", "zIndex": "100", "border": "0px", "borderRadius":"50%"}),     
+    html.H1(children="Last Run", style={"textAlign": "center","marginTop": "10rem"}),
+    
      dcc.Graph(
         id='all-graph',
         figure={
@@ -84,6 +49,27 @@ app.layout = html.Div(
             }
         }
     )
+     ,
+     dcc.Graph(
+        id='sensors',
+        figure={
+            'data': [
+                {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor1"]), 'type': 'line', 'name': 'Far Left Sensor'},
+                {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor2"]), 'type': 'line', 'name': 'Middle Left Sensor'},
+                {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor3"]), 'type': 'line', 'name': 'Middle Sensor'},
+                {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor4"]), 'type': 'line', 'name': 'Middle Right Sensor'},
+                {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor5"]), 'type': 'line', 'name': 'Far Right Sensor'}
+            ],
+            'layout': {
+                'title': 'IR Sensors',
+                'xaxis': {
+                    'tickangle': 45,
+                    'tickmode': 'linear'
+                },
+                'yaxis': {'title': 'Brightness'}
+            }
+        }
+    )
 ])
 
 @app.callback(
@@ -93,7 +79,6 @@ app.layout = html.Div(
 )
 def run1(n_clicks):
      if n_clicks is not None:
-        car = SonicCar()
         try:
             car.fahrparkur_1()
         except Exception as ex:
@@ -107,7 +92,6 @@ def run1(n_clicks):
 )
 def run2(n_clicks):
      if n_clicks is not None:
-        car = SonicCar()
         try:
             car.fahrparkur_2()
         except Exception as ex:
@@ -121,85 +105,159 @@ def run2(n_clicks):
 )
 def run3(n_clicks):
      if n_clicks is not None:
-        car = SonicCar()
         try:
             car.run_until_obstacle_detected()
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop()
 
-@app.callback(
-    Output(component_id="speed_graph", component_property="figure"),
-    Output(component_id="obsticle_graph", component_property="figure"),
-    Output(component_id="steering_graph", component_property="figure"),
-    Output(component_id="all-graph", component_property="figure"),
+@app.callback(    
+    Output(component_id="all-graph", component_property="figure", allow_duplicate=True),
     [Input(component_id="f4_btn", component_property="n_clicks")],    
     prevent_initial_call=True,    
 )
 def run4(n_clicks):
      if n_clicks is not None:
-        car = SonicCar()
         try:
             car.run_fahrparcour_4()
             car.steerin_angle = 90
-            data_service = DataService("drive_data.json")
+            data = data_service.read_data()
+
+            df = pd.DataFrame(data)            
+           
+            all_graph = {
+                'data': [
+                    {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
+                    {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                    {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                ],
+                'layout': {
+                'title': 'All Values', 
+                'xaxis': {
+                'tickangle': 45,
+                'tickmode': 'auto'},               
+                'yaxis': {'title': 'Values'}
+                }
+            }
+            return all_graph
+        except Exception as ex:
+            print(f"Something's wrong! {ex}")
+            car.drive_stop()
+ 
+@app.callback(
+    Output(component_id="all-graph", component_property="figure", allow_duplicate=True),
+    Output(component_id="sensors", component_property="figure", allow_duplicate=True),
+    [Input(component_id="f5_btn", component_property="n_clicks")],
+    prevent_initial_call=True
+)
+def run5(n_clicks):
+     if n_clicks is not None:
+        try:
+            car.run_fahrparcour_5()
             data = data_service.read_data()
 
             df = pd.DataFrame(data)
             
-            speed_figure = {
-                'data': [
-                    {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
-                ],
-                'layout': {
-                    'title': 'Speed',
-                    'xaxis': {
-                    'tickangle': 45,
-                    'tickmode': 'auto'},
-                    'yaxis': {'title': 'Speed'}
-                }
-            }
-            obsticle_figure={
-                'data': [
-                    {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance'},
-                ],
-                'layout': {
-                    'title': 'Obstacle Distance',
-                    'xaxis': {
-                    'tickangle': 45,
-                    'tickmode': 'auto'},
-                    'yaxis': {'title': 'Obstacle Distance'}
-                }
-            }
-            steering_figure={
-                'data': [
-                    {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Wheel Angle'},
-                ],
-                'layout': {
-                    'title': 'Steering Angle',
-                    'xaxis': {
-                    'tickangle': 45,
-                    'tickmode': 'auto'},
-                    'yaxis': {'title': 'Steering Angle'}
-                }
-            }
             all_graph = {
                 'data': [
-                    {'y': df['speed'], 'type': 'line', 'name': 'Speed'},
-                    {'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
-                    {'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                    {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
+                    {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                    {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
                 ],
                 'layout': {
-                    'title': 'All Values',
-                    'yaxis': {'title': 'Values'}
+                'title': 'All Values', 
+                'xaxis': {
+                'tickangle': 45,
+                'tickmode': 'auto'},               
+                'yaxis': {'title': 'Values'}
                 }
             }
-            return speed_figure, obsticle_figure, steering_figure, all_graph
+            sensors= {
+                'data': [
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor1"]), 'type': 'line', 'name': 'Far Left Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor2"]), 'type': 'line', 'name': 'Middle Left Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor3"]), 'type': 'line', 'name': 'Middle Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor4"]), 'type': 'line', 'name': 'Middle Right Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor5"]), 'type': 'line', 'name': 'Far Right Sensor'}
+                ],
+                'layout': {
+                    'title': 'IR Sensors',
+                    'xaxis': {
+                        'tickangle': 45,
+                        'tickmode': 'linear'
+                    },
+                    'yaxis': {'title': 'Brightness'}
+                    }
+                }
+            
+            return all_graph, sensors 
+        
         except Exception as ex:
             print(f"Something's wrong! {ex}")
-            car.drive_stop()
+            car.drive_stop() 
             
+@app.callback(
+    Output(component_id="all-graph", component_property="figure", allow_duplicate=True),
+    Output(component_id="sensors", component_property="figure", allow_duplicate=True),
+    [Input(component_id="f6_btn", component_property="n_clicks")],
+    prevent_initial_call=True
+)
+def run6(n_clicks):
+     if n_clicks is not None:
+        try:
+            car.run_fahrparcour_6()
+            data = data_service.read_data()
+
+            df = pd.DataFrame(data)
             
+            all_graph = {
+                'data': [
+                    {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
+                    {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                    {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                ],
+                'layout': {
+                'title': 'All Values', 
+                'xaxis': {
+                'tickangle': 45,
+                'tickmode': 'auto'},               
+                'yaxis': {'title': 'Values'}
+                }
+            }
+            sensors={
+                'data': [
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor1"]), 'type': 'line', 'name': 'Far Left Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor2"]), 'type': 'line', 'name': 'Middle Left Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor3"]), 'type': 'line', 'name': 'Middle Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor4"]), 'type': 'line', 'name': 'Middle Right Sensor'},
+                    {'x': df['time'], 'y': df['sensor_values'].apply(lambda x: x["sensor5"]), 'type': 'line', 'name': 'Far Right Sensor'}
+                ],
+                'layout': {
+                    'title': 'IR Sensors',
+                    'xaxis': {
+                        'tickangle': 45,
+                        'tickmode': 'linear'
+                    },
+                    'yaxis': {'title': 'Brightness'}
+                    }
+                }
             
+            return all_graph, sensors
+        except Exception as ex:
+            print(f"Something's wrong! {ex}")
+            car.drive_stop()        
+            
+@app.callback(
+    Output("stop_btn", "n_clicks"),
+    [Input("stop_btn", "n_clicks")],
+    prevent_initial_call=True
+)
+def stop(n_clicks):
+     if n_clicks is not None:
+        try:
+            car.emergency_stop = True
+        except Exception as ex:
+            print(f"Something's wrong! {ex}")
+            car.drive_stop() 
 if __name__ == '__main__':
     app.run_server(debug=True)

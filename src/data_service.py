@@ -4,6 +4,7 @@ class DataService:
         
     def __init__(self, file_path):
         self.file_path = file_path
+        
         self.data = []
 
     def clear_data(self):

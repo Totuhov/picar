@@ -7,6 +7,7 @@ class BaseCar():
         self.__steering_angle = 90 
         self.__speed = 0
         self.__direction = "P" 
+        self.__emergency_stop = False
         
         with open("config.json", "r") as f:
             data = json.load(f)
@@ -73,9 +74,18 @@ class BaseCar():
         '''
         Stops motor        
         '''
-        self.set_speed(0)
+        self.set_speed(0)    
+        self.__emergency_stop = False    
         self.__direction = "P"
         print("Car stops")
+      
+    @property  
+    def emergency_stop(self):
+        return self.__emergency_stop
+    
+    @emergency_stop.setter
+    def emergency_stop(self, value = True):
+        self.__emergency_stop = value
     
     def get_speed(self) -> int:
         return self.__speed
@@ -91,7 +101,7 @@ class BaseCar():
     def fahrparkur_1(self) -> None: 
         time.sleep(1)
         self.steering_angle = 90
-        time.sleep(1)
+        time.sleep(1)        
         self.drive_forward(20)   
         time.sleep(3)
         self.drive_stop() 
