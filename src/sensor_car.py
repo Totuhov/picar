@@ -1,6 +1,8 @@
 import datetime
+import json
 import threading
 import time
+import random
 
 from sonic_car import SonicCar
 from basisklassen import Infrared
@@ -9,11 +11,17 @@ class SensorCar(SonicCar):
     def __init__(self):
         super().__init__()
         
+        with open("config.json", "r") as f:
+            self.settings = json.load(f)  
+        
+        
+              
         self.sensor = Infrared(self)
         self.__sensor_values = self.sensor.read_analog()
         self.__avg_ligth = float
-        self.forward_sleep_index = 8
-        self.backward_sleep_index = 14
+        self.forward_sleep_index = self.settings['forward_sleep_index']
+        self.backward_sleep_index = self.settings['backward_sleep_index']
+        self.distance_from_start_avoid = self.settings['distanse_detection']
         
         self.start_event = threading.Event()
         self.stop_event = threading.Event()
@@ -79,7 +87,7 @@ class SensorCar(SonicCar):
                 break
             self._distance = self.distance() 
             
-            if self._distance < 70:
+            if self._distance < self.distance_from_start_avoid:
                 self.obsticle_detected_mode()
             
             self.drive_forward(self.speed)
@@ -88,7 +96,7 @@ class SensorCar(SonicCar):
             min_value = min(self.sensor_values)
             max_value = max(self.sensor_values)
             
-            if max_value - min_value < 5 or min_value > 15:
+            if max_value - min_value < 10 or min_value > 25:
                 self.drive_stop()
                 if self.steering_angle >= 90:
                     self.steering_angle = 45
@@ -103,45 +111,47 @@ class SensorCar(SonicCar):
             index = self.sensor_values.index(min_value)  
             self.turn(index)             
                 
-            time.sleep(self._time_sleep_forward)        
+            time.sleep(self._time_sleep_forward) 
+                   
         self.drive_stop()  
         
     def obsticle_detected_mode(self):
         self._distance = self.distance()   
             
-        while self._distance < 70:
+        while self._distance < self.distance_from_start_avoid:
             if self.emergency_stop == True: 
-                break
-            self.steering_angle += 10
-            time.sleep(0.3)
+                return
+            self.steering_angle = 135
+            time.sleep(0.4)
             self._distance = self.distance()
         
         while self.steering_angle > 90:
             if self.emergency_stop == True: 
-                break
+                return
             self.steering_angle -= 5
             time.sleep(0.1)
         
-        time.sleep(self._distance/self.speed) 
-        
+        time.sleep(self.speed / 5) 
         while self.steering_angle > 45:
             if self.emergency_stop == True: 
-                break
+                return
             self.steering_angle -= 5
-            time.sleep(0.1)
-        
-        while self.steering_angle < 45:
-            if self.emergency_stop == True: 
-                break
-            self.steering_angle += 5
-            time.sleep(0.1)  
+            time.sleep(0.1)                         
             
         self.sensor_values = self.sensor.read_analog() 
         
-        while max(self.sensor_values) - min(self.sensor_values) < 5 or min(self.sensor_values) < 5:   
-            time.sleep(0.2)                                 
+        while min(self.sensor_values) > 20: 
+            if self.emergency_stop == True: 
+                return  
+            time.sleep(0.2)
+            random_steering = random.choice([True, False])
+            if random_steering:
+                 self.steering_angle += 1
+            else:   
+                self.steering_angle -= 1                             
             self.sensor_values = self.sensor.read_analog()
          
+        print(f'Min. sensor value: {min(self.sensor_values)} ---- time: {datetime.datetime.now().strftime("%H:%M:%S.%f")[:-3]}')
         return   
             
     def turn(self, argument):
