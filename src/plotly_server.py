@@ -1,3 +1,4 @@
+import threading
 from data_service import DataService
 
 import pandas as pd
@@ -82,6 +83,7 @@ def run1(n_clicks):
      if n_clicks is not None:
         try:
             car.fahrparkur_1()
+
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop()
@@ -257,6 +259,7 @@ def stop(n_clicks):
      if n_clicks is not None:
         try:
             car.emergency_stop = True
+            print('Emergency Stop activated!')
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop() 
