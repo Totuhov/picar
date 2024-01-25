@@ -1,13 +1,23 @@
-import threading
-from data_service import DataService
-
 import pandas as pd
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
+import dash_bootstrap_components as dbc
+
 from car_sensor import SensorCar
+from data_service import DataService
+from parcours.parcour_1 import ParcourOne as p1
 
 car = SensorCar()
+
+dropdown_elements = [
+    {"label": "Option 1", "value": "option1"},
+    {"label": "Option 2", "value": "option2"},
+    {"label": "Option 3", "value": "option3"},
+    {"label": "Option 4", "value": "option4"},
+    {"label": "Option 5", "value": "option5"},
+    {"label": "Option 6", "value": "option6"}
+]
 
 data_service = DataService("drive_data.json")
 data = data_service.read_data()
@@ -82,7 +92,7 @@ app.layout = html.Div(
 def run1(n_clicks):
      if n_clicks is not None:
         try:
-            car.fahrparkur_1()
+            p1(car).run()
 
         except Exception as ex:
             print(f"Something's wrong! {ex}")
@@ -259,7 +269,7 @@ def stop(n_clicks):
      if n_clicks is not None:
         try:
             car.emergency_stop = True
-            print('Emergency Stop activated!')
+                       
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop() 

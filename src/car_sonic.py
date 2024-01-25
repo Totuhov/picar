@@ -1,17 +1,18 @@
-import random
 from car_base import BaseCar
 from data_service import DataService
 from basisklassen import *
+
 import time
-from datetime import datetime
 import threading
+import random
+from datetime import datetime
 
 class SonicCar(BaseCar):
     def __init__(self):
         super().__init__()
                 
         self._ultrasonic = Ultrasonic()  
-        self.data_service = DataService("drive_data.json")
+        self._data_service = DataService("drive_data.json")
         
         self.start_event = threading.Event()
         self.stop_event = threading.Event()
@@ -63,7 +64,7 @@ class SonicCar(BaseCar):
             self.__check_far_distance(high_speed, max_distance, self._distance)                                
         
         print(i, 'Loops beendet.')        
-        # self.data_service._save_to_file()
+        self._data_service._save_to_file()
         self.drive_stop()
         self.stop_event.set()
             
@@ -85,11 +86,11 @@ class SonicCar(BaseCar):
         if 0 < self._distance < min_distance:
             self.drive_stop()                            
             self.steering_angle = 45  
-            self.data_service.write_data(self.create_data())              
+            self._data_service.write_data(self.create_data())              
             self.drive_backward(init_speed)                     
             time.sleep(random.uniform(0.5, 2))              
             self.steering_angle = 135
-            self.data_service.write_data(self.create_data())
+            self._data_service.write_data(self.create_data())
             
 
     def __check_normal_distance(self, init_speed: int, min_distance: int, max_distance: int, random_direction: bool, distance: float):
@@ -99,7 +100,7 @@ class SonicCar(BaseCar):
             self.drive_forward(self.get_speed())
             self.steering_angle = self.steering_angle + random.randint(-10, 10)
             
-            self.data_service.write_data(self.create_data())
+            self._data_service.write_data(self.create_data())
 
     def __check_far_distance(self, high_speed: bool, max_distance: int, distance: float):
         
@@ -107,16 +108,16 @@ class SonicCar(BaseCar):
             self.steering_angle = 90  
             self.set_speed(min(self.get_speed() + 5, 50))
             self.drive_forward(self.get_speed())
-            self.data_service.write_data(self.create_data())
+            self._data_service.write_data(self.create_data())
     
     def measure_data(self, stop_event):
         print("measure data - Start")
-        self.data_service.write_data(self.create_data())
+        self._data_service.write_data(self.create_data())
         while not stop_event.is_set():
             time.sleep(0.2)
-            self.data_service.write_data(self.create_data())
+            self._data_service.write_data(self.create_data())
 
-        self.data_service._save_to_file()
+        self._data_service._save_to_file()
         print("measure data - Stop")
     
     def run_fahrparcour_4(self):

@@ -12,13 +12,11 @@ class SensorCar(SonicCar):
         super().__init__()
         
         with open("config.json", "r") as f:
-            self.settings = json.load(f)  
-        
-        
+            self.settings = json.load(f)         
               
         self.sensor = Infrared(self)
-        self.__sensor_values = self.sensor.read_analog()
-        self.__avg_ligth = float
+        self._sensor_values = self.sensor.read_analog()
+        self._avg_ligth = float
         self.forward_sleep_index = self.settings['forward_sleep_index']
         self.backward_sleep_index = self.settings['backward_sleep_index']
         self.distance_from_start_avoid = self.settings['distanse_detection']
@@ -28,19 +26,19 @@ class SensorCar(SonicCar):
         
     @property 
     def sensor_values(self) -> list:
-        return self.__sensor_values
+        return self._sensor_values
     
     @sensor_values.setter
     def sensor_values(self, value) -> None:
-        self.__sensor_values = value
+        self._sensor_values = value
         
     @property 
     def avg_ligth(self) -> float:
-        return self.__avg_ligth
+        return self._avg_ligth
     
     @sensor_values.setter
     def avg_ligth(self, value) -> None:
-        self.__avg_ligth = value    
+        self._avg_ligth = value    
         
         
     def test_run(self):
@@ -222,11 +220,11 @@ class SensorCar(SonicCar):
             "direction": self.get_direction(),
             "time": formatted_time,
             "sensor_values": {
-                "sensor1": self.__sensor_values[0],
-                "sensor2": self.__sensor_values[1],
-                "sensor3": self.__sensor_values[2],
-                "sensor4": self.__sensor_values[3],
-                "sensor5": self.__sensor_values[4]
+                "sensor1": self._sensor_values[0],
+                "sensor2": self._sensor_values[1],
+                "sensor3": self._sensor_values[2],
+                "sensor4": self._sensor_values[3],
+                "sensor5": self._sensor_values[4]
             }
         }
         return data_obj
