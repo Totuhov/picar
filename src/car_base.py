@@ -251,7 +251,7 @@ class BaseCar():
             timer = 0.0
 
             # Phase 3: Reduce steering angle gradually to 45 over time
-            while self.steering_angle > 45:
+            while self.steering_angle > 45 and not self.emergency_stop:
                 self.steering_angle -= 5
                 time.sleep(0.1)
 
@@ -305,7 +305,7 @@ class BaseCar():
             self.steering_angle = 90  # Reset steering angle to 90
 
             # Phase 10: Increase steering angle gradually to 135 over time
-            while self.steering_angle < 135:
+            while self.steering_angle < 135 and not self.emergency_stop:
                 self.steering_angle += 5
                 time.sleep(0.1)
 
