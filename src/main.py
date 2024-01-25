@@ -1,4 +1,4 @@
-from sonic_car import SonicCar
+from car_sonic import SonicCar
 
 def run():
     car = SonicCar()

@@ -4,7 +4,7 @@ import threading
 import time
 import random
 
-from sonic_car import SonicCar
+from car_sonic import SonicCar
 from basisklassen import Infrared
 
 class SensorCar(SonicCar):
@@ -116,22 +116,20 @@ class SensorCar(SonicCar):
         self.drive_stop()  
         
     def obsticle_detected_mode(self):
+        
         self._distance = self.distance()   
-            
+        self.drive_forward(20)    
+        
         while self._distance < self.distance_from_start_avoid:
             if self.emergency_stop == True: 
                 return
-            self.steering_angle = 135
-            time.sleep(0.4)
+            
+            while self.steering_angle < 135:
+                self.steering_angle += 5
+                time.sleep(0.1)
+                    
             self._distance = self.distance()
-        
-        while self.steering_angle > 90:
-            if self.emergency_stop == True: 
-                return
-            self.steering_angle -= 5
-            time.sleep(0.1)
-        
-        time.sleep(self.speed / 5) 
+                
         while self.steering_angle > 45:
             if self.emergency_stop == True: 
                 return
@@ -140,7 +138,7 @@ class SensorCar(SonicCar):
             
         self.sensor_values = self.sensor.read_analog() 
         
-        while min(self.sensor_values) > 20: 
+        while min(self.sensor_values) > 5: 
             if self.emergency_stop == True: 
                 return  
             time.sleep(0.2)

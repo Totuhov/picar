@@ -4,7 +4,7 @@ import pandas as pd
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
-from sensor_car import SensorCar
+from car_sensor import SensorCar
 
 car = SensorCar()
 
@@ -15,8 +15,9 @@ df = pd.DataFrame(data)
 
 app = dash.Dash(__name__)
 
-app.layout = html.Div(
-    [ 
+
+app.layout = html.Div(    
+    [
     html.Button(id="f1_btn", type="button", children="Start Fahrparcour 1", style={"position": "fixed", "top": "1rem", "left": "1rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
     
     html.Button(id="f2_btn", type="button", children="Start Fahrparcour 2", style={"position": "fixed", "top": "1rem", "left": "11rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
@@ -118,11 +119,11 @@ def run3(n_clicks):
 )
 def run4(n_clicks):
      if n_clicks is not None:
-        try:
+        try:            
             car.run_fahrparcour_4()
             car.steerin_angle = 90
             data = data_service.read_data()
-
+            
             df = pd.DataFrame(data)            
            
             all_graph = {
