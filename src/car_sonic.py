@@ -1,5 +1,5 @@
 from car_base import BaseCar
-from data_service import DataService
+from utilities.data_service import DataService
 from basisklassen import *
 
 import time
@@ -12,7 +12,7 @@ class SonicCar(BaseCar):
         super().__init__()
                 
         self._ultrasonic = Ultrasonic()  
-        self._data_service = DataService("drive_data.json")
+        self._data_service = DataService()
         
         self.start_event = threading.Event()
         self.stop_event = threading.Event()

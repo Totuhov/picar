@@ -92,7 +92,7 @@ class BaseCar():
         Set _direction to 'P'        
         '''
         self.set_speed(0)    
-        self._emergency_stop = False    
+        self.emergency_stop = False    
         self._direction = "P"
         print("Car stops")
       
@@ -110,7 +110,7 @@ class BaseCar():
         value (bool): default True
         '''
         if not isinstance(value, bool):
-            raise Exception(f"The value of speed schould be 'bool', but '{type(value).__name__}' is given")
+            raise Exception(f"The value of speed schould be 'bool', but '{type(value).__name__}' is given")           
         self._emergency_stop = value
     
     def get_speed(self) -> int:

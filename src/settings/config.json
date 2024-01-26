@@ -1,0 +1,8 @@
+{
+    "turning_offset": 26,
+    "forward_A": 0,
+    "forward_B": 0,
+    "distanse_detection": 30,
+    "forward_sleep_index": 8,
+    "backward_sleep_index": 14 
+}

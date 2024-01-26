@@ -164,12 +164,12 @@ class SensorCar(SonicCar):
     
     def measure_data(self, stop_event):
         print("measure data - Start")
-        self.data_service.write_data(self.create_data())
+        self._data_service.write_data(self.create_data())
         while not stop_event.is_set():
             time.sleep(0.2)
-            self.data_service.write_data(self.create_data())
+            self._data_service.write_data(self.create_data())
 
-        self.data_service._save_to_file()
+        self._data_service._save_to_file()
         print("measure data - Stop")
 
     def run_fahrparcour_5(self):

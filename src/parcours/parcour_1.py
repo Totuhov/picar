@@ -1,4 +1,4 @@
-from parcours.timer import Timer
+from utilities.timer import Timer
 from car_sensor import SensorCar
 
 

@@ -1,7 +1,7 @@
 import time
 
 from car_sensor import SensorCar
-from parcours.timer import Timer
+from utilities.timer import Timer
 
 
 class ParcourTwo():

@@ -5,9 +5,10 @@ from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 
 from car_sensor import SensorCar
-from data_service import DataService
+from utilities.data_service import DataService
 from parcours.parcour_1 import ParcourOne as p1
 from parcours.parcour_2 import ParcourTwo as p2
+from parcours.parcour_3 import ParcourThree as p3
 
 car = SensorCar()
 
@@ -108,6 +109,7 @@ def run2(n_clicks):
      if n_clicks is not None:
         try:
              p2(car).run()
+             
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop()
@@ -120,7 +122,8 @@ def run2(n_clicks):
 def run3(n_clicks):
      if n_clicks is not None:
         try:
-            car.run_until_obstacle_detected()
+            p3(car).run()
+            
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop()
