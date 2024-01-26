@@ -7,6 +7,7 @@ import dash_bootstrap_components as dbc
 from car_sensor import SensorCar
 from data_service import DataService
 from parcours.parcour_1 import ParcourOne as p1
+from parcours.parcour_2 import ParcourTwo as p2
 
 car = SensorCar()
 
@@ -106,7 +107,7 @@ def run1(n_clicks):
 def run2(n_clicks):
      if n_clicks is not None:
         try:
-            car.fahrparkur_2()
+             p2(car).run()
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop()
