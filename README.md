@@ -32,8 +32,22 @@ Fahren bis ein Hindernis im Weg ist und dann stoppen. Während dieser Fahrt soll
 [SonicCar](soniccar)
 [SensorCar](sensorcar)
 
--   BaseCar
--   SonicCar
--   SensorCar
+-  ##### BaseCar
+
+**drive_forward**
+**drive_backward**
+**drive_stop**
+**get_direction**
+
+-  ##### SonicCar (inherit from BaseCar)
+
+**distance**
+**_check_low_distance**
+**_check_normal_distance**
+**_check_far_distance**
+
+
+
+-  ##### SensorCar (inherit from SonicCar)
 
 ### config.json

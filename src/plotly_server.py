@@ -9,6 +9,7 @@ from utilities.data_service import DataService
 from parcours.parcour_1 import ParcourOne as p1
 from parcours.parcour_2 import ParcourTwo as p2
 from parcours.parcour_3 import ParcourThree as p3
+from parcours.parcour_4 import ParcourFour as p4
 
 car = SensorCar()
 
@@ -136,7 +137,7 @@ def run3(n_clicks):
 def run4(n_clicks):
      if n_clicks is not None:
         try:            
-            car.run_fahrparcour_4()
+            p4(car).run()
             car.steerin_angle = 90
             data = data_service.read_data()
             

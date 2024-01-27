@@ -20,8 +20,9 @@ class ParcourThree():
                 if print_distance:
                     print(self._distance)
                     self._distance = c.distance()         
-        except Exception as e:          
+        except Exception as e:                      
             print(e)
              
+        print(self._distance)
         c.drive_stop()
         print('Parcour execution ended') 

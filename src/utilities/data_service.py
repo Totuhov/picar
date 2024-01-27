@@ -1,3 +1,4 @@
+import datetime
 import os
 import json
 
@@ -41,7 +42,7 @@ class DataService:
         Clears the data list and saves the changes to the JSON file.
         """
         self.data = []
-        self.save_to_file()
+        self.save_to_file()      
 
     def write_data(self, new_object):
         """
@@ -69,4 +70,4 @@ class DataService:
         os.makedirs(os.path.dirname(self.file_path), exist_ok=True)
 
         with open(self.file_path, 'w') as file:
-            json.dump(self.data, file, indent=2)
+            json.dump(self.data, file, indent=2)            
