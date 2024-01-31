@@ -3,7 +3,6 @@ from utilities.data_service import DataService
 from basisklassen import *
 
 import time
-import threading
 import random
 from datetime import datetime
 

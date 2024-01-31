@@ -18,11 +18,11 @@ class ParcourThree():
                 if c.emergency_stop:
                     raise Exception('Emergency Stop activated!')
                 if print_distance:
-                    print(self._distance)
+                    print(f'{self._distance:.2f}')
                     self._distance = c.distance()         
         except Exception as e:                      
             print(e)
              
-        print(self._distance)
         c.drive_stop()
         print('Parcour execution ended') 
+        print(f"Last measured distance: {self._distance:.2f} units")
