@@ -10,6 +10,7 @@ from basisklassen import Infrared
 class SensorCar(SonicCar):
 
     sensor = Infrared()
+    
 
     def __init__(self):
         super().__init__()
@@ -98,23 +99,14 @@ class SensorCar(SonicCar):
             
     def turn(self, argument):
         if argument == 0:
-            self.steering_angle -= 30
+            self.steering_angle = 45
         elif argument == 1:
-            self.steering_angle -= 20
+            self.steering_angle = 67
         elif argument == 2:
             self.steering_angle = 90
         elif argument == 3:
-            self.steering_angle += 20
+            self.steering_angle = 112
         elif argument == 4:
-            self.steering_angle += 30            
-    
-    def measure_data(self, stop_event):
-        print("measure data - Start")
-        self._data_service.write_data(self.create_data())
-        while not stop_event.is_set():
-            time.sleep(0.2)
-            self._data_service.write_data(self.create_data())
-
-        self._data_service._save_to_file()
-        print("measure data - Stop")    
+            self.steering_angle = 135            
+ 
         

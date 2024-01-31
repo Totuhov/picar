@@ -14,8 +14,8 @@ class ParcourSix():
         ds = c._data_service
         
         self._timer = Timer(c)
-        self._time_sleep_forward = c.forward_sleep_index / c.speed
-        self._time_sleep_backward = c.backward_sleep_index / c.speed
+        self._time_sleep_forward = c.forward_sleep_index / c.get_speed()
+        self._time_sleep_backward = c.backward_sleep_index / c.get_speed()
     
         try:   
             for _ in range(50):
@@ -26,7 +26,7 @@ class ParcourSix():
                 if c._distance < c.distance_from_start_avoid:
                     c.obsticle_detected_mode()
                 
-                c.drive_forward(c.get_speed())
+                c.drive_forward(20)
                 c.sensor_values = c.sensor.read_analog()
                 
                 min_value = min(c.sensor_values)
@@ -41,7 +41,7 @@ class ParcourSix():
                         c.steering_angle = 135
                         
                     ds.write_data(self.create_data(c))                        
-                    c.drive_backward(c.get_speed())
+                    c.drive_backward(20)
                     self._timer.timer(self._time_sleep_backward)
                     c.steering_angle = 90
                     continue

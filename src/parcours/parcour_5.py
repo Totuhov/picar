@@ -21,7 +21,7 @@ class ParcourFive():
             for i in range(50):
                 if c.emergency_stop == True:
                     raise Exception('Emergency Stop activated!')
-                c.drive_forward(c.get_speed())
+                c.drive_forward(20)
                 c.sensor_values = c.sensor.read_analog()
                 
                 min_value = min(c.sensor_values)
@@ -37,7 +37,7 @@ class ParcourFive():
                         c.steering_angle = 135
                         
                     ds.write_data(self.create_data(c))
-                    c.drive_backward(c.get_speed())
+                    c.drive_backward(20)
                     self._timer.timer(self._time_sleep_backward)
                     c.steering_angle = 90
                     continue

@@ -19,6 +19,7 @@
 3. [Vorwärtsfahrt bis Hindernis](#3-vorwärtsfahrt-bis-hindernis)
 4. [Erkundungstour](#4-erkundungstour)
 5. [Linieverfolgung](#5-linieverfolgung)
+6. [Hindernis‑Umfahrung](#6-hindernis‑umfahrung)
 
 #### 1. Forward and backward
 
@@ -40,28 +41,40 @@ Das Auto fährt, und im Falle eines Hindernisses ändert es die Fahrtrichtung, u
 
 Folgen einer Linie auf dem Boden.
 
+#### 6. Linieverfolgung bis zur Hindernisserkennung
+
+Kombination von Linienverfolgung per Infrarot‑Senor und Hinderniserkennung per Ultraschall‑Sensor. Das Auto soll einer Linie folgen bis ein Hindernis erkannt wird und dann anhalten.
+
+#### 7. Hindernis‑Umfahrung
+
+Entwicklung und Testen einer Hindernis‑Umfahrung basieren auf der Linienverfolgung. Das Hindernis blockiert die Linie und soll umfahren werden.
+
 ### Car Classes
 
 -   #### BaseCar
 
-    **drive_forward**
+    *drive_forward*
 
-    **drive_backward**
+    *drive_backward*
 
-    **drive_stop**
+    *drive_stop*
 
-    **get_direction**
+    *get_direction*
 
 -   #### SonicCar (inherit from BaseCar)
 
-    **distance**
+    *distance*
 
-    **\_check_low_distance**
+    *\_check_low_distance*
 
-    **\_check_normal_distance**
+    *\_check_normal_distance*
 
-    **\_check_far_distance**
+    *\_check_far_distance*
 
 -   #### SensorCar (inherit from SonicCar)
+
+    *obsticle_detected_mode*
+
+    *turn*
 
 ### config.json
