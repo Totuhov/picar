@@ -11,6 +11,7 @@ from parcours.parcour_2 import ParcourTwo as p2
 from parcours.parcour_3 import ParcourThree as p3
 from parcours.parcour_4 import ParcourFour as p4
 from parcours.parcour_5 import ParcourFive as p5
+from parcours.parcour_6 import ParcourSix as p6
 
 car = SensorCar()
 
@@ -24,17 +25,17 @@ app = dash.Dash(__name__)
 
 app.layout = html.Div(    
     [
-    html.Button(id="f1_btn", type="button", children="Start Fahrparcour 1", style={"position": "fixed", "top": "1rem", "left": "1rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
+    html.Button(id="f1_btn", type="button", children="Fahrparcour 1", style={"position": "fixed", "top": "1rem", "left": "1rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
     
-    html.Button(id="f2_btn", type="button", children="Start Fahrparcour 2", style={"position": "fixed", "top": "1rem", "left": "11rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
+    html.Button(id="f2_btn", type="button", children="Fahrparcour 2", style={"position": "fixed", "top": "1rem", "left": "11rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
     
-    html.Button(id="f3_btn", type="button", children="Start Fahrparcour 3", style={"position": "fixed", "top": "1rem", "left": "21rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
+    html.Button(id="f3_btn", type="button", children="Fahrparcour 3", style={"position": "fixed", "top": "1rem", "left": "21rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }), 
     
-    html.Button(id="f4_btn", type="button", children="Start Fahrparcour 4", style={"position": "fixed", "top": "1rem", "left": "31rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
+    html.Button(id="f4_btn", type="button", children="Fahrparcour 4", style={"position": "fixed", "top": "1rem", "left": "31rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),
     
-    html.Button(id="f5_btn", type="button", children="Start IR-Sensor Test", style={"position": "fixed", "top": "1rem", "left": "41rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
+    html.Button(id="f5_btn", type="button", children="Fahrparcour 5", style={"position": "fixed", "top": "1rem", "left": "41rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
     
-    html.Button(id="f6_btn", type="button", children="Start Final Test", style={"position": "fixed", "top": "1rem", "left": "51rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
+    html.Button(id="f6_btn", type="button", children="Fahrparcour 6", style={"position": "fixed", "top": "1rem", "left": "51rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
     
     html.Button(id="stop_btn", type="button", children="Emergency Stop", style={"position": "fixed", "top": "5rem", "left": "1rem", "padding": "4rem 1.5rem", "backgroundColor": "#FF6868", "color": "#FFF", "zIndex": "100", "border": "0px", "borderRadius":"50%"}),     
     html.H1(children="Last Run Log Data", style={"textAlign": "center","marginTop": "10rem"}),
@@ -214,9 +215,8 @@ def run5(n_clicks):
 def run6(n_clicks):
      if n_clicks is not None:
         try:
-            car.run_fahrparcour_6()
+            p6(car).run()
             data = data_service.read_data()
-
             df = pd.DataFrame(data)
             
             all_graph = {
