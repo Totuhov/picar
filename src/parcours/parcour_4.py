@@ -27,7 +27,7 @@ class ParcourFour():
                     raise Exception('Emergency Stop activated!')  
                 c._distance = c.distance()
                 ds.write_data(self.create_data(self._car))   
-                print(f"Obsticle detected at {c._distance} cm.")               
+                print(f"Obsticle detected at {c._distance:.2f}")               
                 c._check_low_distance(init_speed, min_distance, c._distance)                            
                 
                 c._check_normal_distance(init_speed, min_distance, max_distance, random_direction, c._distance)

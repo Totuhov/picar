@@ -25,7 +25,11 @@ dropdown_elements = [
 data_service = DataService("drive_data.json")
 data = data_service.read_data()
 
+ultrasonic_data_service = DataService("log/drive_data.json")
+ultrasonic_data = ultrasonic_data_service.read_data()
+
 df = pd.DataFrame(data)
+df_ultra = pd.DataFrame(ultrasonic_data)
 
 app = dash.Dash(__name__)
 
@@ -45,18 +49,18 @@ app.layout = html.Div(
     html.Button(id="f6_btn", type="button", children="Start Final Test", style={"position": "fixed", "top": "1rem", "left": "51rem", "padding": "1rem", "backgroundColor": "#333", "color": "#FFF", "zIndex": "100" }),  
     
     html.Button(id="stop_btn", type="button", children="Emergency Stop", style={"position": "fixed", "top": "5rem", "left": "1rem", "padding": "4rem 1.5rem", "backgroundColor": "#FF6868", "color": "#FFF", "zIndex": "100", "border": "0px", "borderRadius":"50%"}),     
-    html.H1(children="Last Run", style={"textAlign": "center","marginTop": "10rem"}),
+    html.H1(children="Last Run Log Data", style={"textAlign": "center","marginTop": "10rem"}),
     
      dcc.Graph(
         id='all-graph',
         figure={
             'data': [
-                {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
-                {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
-                {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                {'x': df_ultra['time'], 'y': df_ultra['speed'], 'type': 'line', 'name': 'Speed'},
+                {'x': df_ultra['time'], 'y': df_ultra['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                {'x': df_ultra['time'], 'y': df_ultra['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
             ],
             'layout': {
-                'title': 'All Values', 
+                'title': 'Ultrasonic Values', 
                 'xaxis': {
                 'tickangle': 45,
                 'tickmode': 'auto'},               
@@ -139,15 +143,15 @@ def run4(n_clicks):
         try:            
             p4(car).run()
             car.steerin_angle = 90
-            data = data_service.read_data()
+            data = ultrasonic_data_service.read_data()
             
-            df = pd.DataFrame(data)            
+            df_ultra = pd.DataFrame(data)            
            
             all_graph = {
                 'data': [
-                    {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
-                    {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
-                    {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                    {'x': df_ultra['time'], 'y': df_ultra['speed'], 'type': 'line', 'name': 'Speed'},
+                    {'x': df_ultra['time'], 'y': df_ultra['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                    {'x': df_ultra['time'], 'y': df_ultra['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
                 ],
                 'layout': {
                 'title': 'All Values', 
