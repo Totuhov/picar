@@ -1,10 +1,10 @@
 # picar
 
-[About](#about)
+-   **[About](#about)**
 
-[Documentation](#documentation)
+-   **[Documentation](#documentation)**
 
-[Configuration](#configjson)
+-   **[Configuration](#configjson)**
 
 ## About
 
@@ -14,9 +14,9 @@
 
 ### Parcours
 
-1. [Forward and backward](forward_and_backward)
-2. [Driving in a circle with maximum steering angle](driving_in_a_circle_with_maximum_steering_angle)
-3. [Vorwärtsfahrt bis Hindernis](vorwärtsfahrt_bis_Hindernis)
+1. [Forward and backward](#forward-and-backward)
+2. [Driving in a circle with maximum steering angle](#driving-in-a-circle-with-maximum-steering-angle)
+3. [Vorwärtsfahrt bis Hindernis](#vorwärtsfahrt-bis-hindernis)
 
 #### Forward and backward
 
@@ -32,29 +32,26 @@ Fahren bis ein Hindernis im Weg ist und dann stoppen. Während dieser Fahrt soll
 
 ### Car Classes
 
-[BaseCar](#basecar)
+-   #### BaseCar
 
-[SonicCar](#soniccar-inherit-from-basecar)
+    **drive_forward**
 
-[SensorCar](#sensorcar-inherit-from-soniccar)
+    **drive_backward**
 
--   ##### BaseCar
+    **drive_stop**
 
-**drive_forward**
-**drive_backward**
-**drive_stop**
-**get_direction**
+    **get_direction**
 
--   ##### SonicCar (inherit from BaseCar)
+-   #### SonicCar (inherit from BaseCar)
 
-**distance**
+    **distance**
 
-**\_check_low_distance**
+    **\_check_low_distance**
 
-**\_check_normal_distance**
+    **\_check_normal_distance**
 
-**\_check_far_distance**
+    **\_check_far_distance**
 
--   ##### SensorCar (inherit from SonicCar)
+-   #### SensorCar (inherit from SonicCar)
 
 ### config.json
