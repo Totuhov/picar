@@ -32,9 +32,11 @@ Fahren bis ein Hindernis im Weg ist und dann stoppen. Während dieser Fahrt soll
 
 ### Car Classes
 
-[BaseCar](basecar)
-[SonicCar](soniccar)
-[SensorCar](sensorcar)
+[BaseCar](#basecar)
+
+[SonicCar](#soniccar-inherit-from-basecar)
+
+[SensorCar](#sensorcar-inherit-from-soniccar)
 
 -   ##### BaseCar
 
@@ -46,8 +48,11 @@ Fahren bis ein Hindernis im Weg ist und dann stoppen. Während dieser Fahrt soll
 -   ##### SonicCar (inherit from BaseCar)
 
 **distance**
+
 **\_check_low_distance**
+
 **\_check_normal_distance**
+
 **\_check_far_distance**
 
 -   ##### SensorCar (inherit from SonicCar)
