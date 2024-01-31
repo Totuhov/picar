@@ -1,8 +1,10 @@
 # picar
 
-[About](about)
-[Documentation](documentation)
-[Configuration](config.json)
+[About](#about)
+
+[Documentation](#documentation)
+
+[Configuration](#configjson)
 
 ## About
 
