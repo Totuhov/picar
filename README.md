@@ -6,6 +6,8 @@
 
 ## About
 
+![raspberry](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white) ![dash](https://img.shields.io/badge/dash-008DE4?style=for-the-badge&logo=dash&logoColor=white) ![json](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
+
 ## Documentation
 
 ### Parcours
@@ -32,22 +34,20 @@ Fahren bis ein Hindernis im Weg ist und dann stoppen. Während dieser Fahrt soll
 [SonicCar](soniccar)
 [SensorCar](sensorcar)
 
--  ##### BaseCar
+-   ##### BaseCar
 
 **drive_forward**
 **drive_backward**
 **drive_stop**
 **get_direction**
 
--  ##### SonicCar (inherit from BaseCar)
+-   ##### SonicCar (inherit from BaseCar)
 
 **distance**
-**_check_low_distance**
-**_check_normal_distance**
-**_check_far_distance**
+**\_check_low_distance**
+**\_check_normal_distance**
+**\_check_far_distance**
 
-
-
--  ##### SensorCar (inherit from SonicCar)
+-   ##### SensorCar (inherit from SonicCar)
 
 ### config.json
