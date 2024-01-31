@@ -18,6 +18,7 @@
 2. [Driving in a circle with maximum steering angle](#2-driving-in-a-circle-with-maximum-steering-angle)
 3. [Vorwärtsfahrt bis Hindernis](#3-vorwärtsfahrt-bis-hindernis)
 4. [Erkundungstour](#4-erkundungstour)
+5. [Linieverfolgung](#5-linieverfolgung)
 
 #### 1. Forward and backward
 
@@ -34,6 +35,10 @@ Fahren bis ein Hindernis im Weg ist und dann stoppen. Während dieser Fahrt soll
 #### 4. Erkundungstour
 
 Das Auto fährt, und im Falle eines Hindernisses ändert es die Fahrtrichtung, um die Fahrt fortzusetzen. Für die Änderung der Fahrtrichtung wird ein maximaler Lenkwinkel eingeschlagen, und das Fahrzeug kann auch rückwärts fahren. Die Geschwindigkeit, der Abstand zum Objekt und die Fahrtrichtung werden regelmäßig gespeichert. Die Fahrdaten werden aufgezeichnet.
+
+#### 5. Linieverfolgung
+
+Folgen einer Linie auf dem Boden.
 
 ### Car Classes
 

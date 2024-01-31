@@ -10,26 +10,14 @@ from parcours.parcour_1 import ParcourOne as p1
 from parcours.parcour_2 import ParcourTwo as p2
 from parcours.parcour_3 import ParcourThree as p3
 from parcours.parcour_4 import ParcourFour as p4
+from parcours.parcour_5 import ParcourFive as p5
 
 car = SensorCar()
 
-dropdown_elements = [
-    {"label": "Option 1", "value": "option1"},
-    {"label": "Option 2", "value": "option2"},
-    {"label": "Option 3", "value": "option3"},
-    {"label": "Option 4", "value": "option4"},
-    {"label": "Option 5", "value": "option5"},
-    {"label": "Option 6", "value": "option6"}
-]
-
-data_service = DataService("drive_data.json")
+data_service = DataService("log/drive_data.json")
 data = data_service.read_data()
 
-ultrasonic_data_service = DataService("log/drive_data.json")
-ultrasonic_data = ultrasonic_data_service.read_data()
-
 df = pd.DataFrame(data)
-df_ultra = pd.DataFrame(ultrasonic_data)
 
 app = dash.Dash(__name__)
 
@@ -55,9 +43,9 @@ app.layout = html.Div(
         id='all-graph',
         figure={
             'data': [
-                {'x': df_ultra['time'], 'y': df_ultra['speed'], 'type': 'line', 'name': 'Speed'},
-                {'x': df_ultra['time'], 'y': df_ultra['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
-                {'x': df_ultra['time'], 'y': df_ultra['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
+                {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
             ],
             'layout': {
                 'title': 'Ultrasonic Values', 
@@ -143,15 +131,15 @@ def run4(n_clicks):
         try:            
             p4(car).run()
             car.steerin_angle = 90
-            data = ultrasonic_data_service.read_data()
+            data = data_service.read_data()
             
             df_ultra = pd.DataFrame(data)            
            
             all_graph = {
                 'data': [
-                    {'x': df_ultra['time'], 'y': df_ultra['speed'], 'type': 'line', 'name': 'Speed'},
-                    {'x': df_ultra['time'], 'y': df_ultra['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
-                    {'x': df_ultra['time'], 'y': df_ultra['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
+                    {'x': df['time'], 'y': df['speed'], 'type': 'line', 'name': 'Speed'},
+                    {'x': df['time'], 'y': df['obsticle_dist'], 'type': 'line', 'name': 'Obstacle Distance in cm'},
+                    {'x': df['time'], 'y': df['wheels_angle'], 'type': 'line', 'name': 'Steering Angle in ° (forward 90)'},
                 ],
                 'layout': {
                 'title': 'All Values', 
@@ -175,9 +163,8 @@ def run4(n_clicks):
 def run5(n_clicks):
      if n_clicks is not None:
         try:
-            car.run_fahrparcour_5()
+            p5(car).run()
             data = data_service.read_data()
-
             df = pd.DataFrame(data)
             
             all_graph = {

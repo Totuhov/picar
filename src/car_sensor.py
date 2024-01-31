@@ -8,21 +8,24 @@ from car_sonic import SonicCar
 from basisklassen import Infrared
 
 class SensorCar(SonicCar):
+
+    sensor = Infrared()
+
     def __init__(self):
         super().__init__()
         
         with open("config.json", "r") as f:
             self.settings = json.load(f)         
               
-        self.sensor = Infrared(self)
         self._sensor_values = self.sensor.read_analog()
         self._avg_ligth = float
-        self.forward_sleep_index = self.settings['forward_sleep_index']
-        self.backward_sleep_index = self.settings['backward_sleep_index']
-        self.distance_from_start_avoid = self.settings['distanse_detection']
         
-        self.start_event = threading.Event()
-        self.stop_event = threading.Event()
+        self._forward_sleep_index = self.settings['forward_sleep_index']
+        self._backward_sleep_index = self.settings['backward_sleep_index']
+        self._distance_from_start_avoid = self.settings['distanse_detection']
+        
+        # self.start_event = threading.Event()
+        # self.stop_event = threading.Event()
         
     @property 
     def sensor_values(self) -> list:
@@ -39,40 +42,22 @@ class SensorCar(SonicCar):
     @sensor_values.setter
     def avg_ligth(self, value) -> None:
         self._avg_ligth = value    
-        
-        
-    def test_run(self):
-        self.emergency_stop = False        
-        self.speed = 20
-        self._time_sleep_forward = self.forward_sleep_index / self.speed
-        self._time_sleep_backward = self.backward_sleep_index / self.speed
-        
-        for i in range(50):
-            if self.emergency_stop == True: 
-                break
-            self.drive_forward(self.speed)
-            self.sensor_values = self.sensor.read_analog()
-            
-            min_value = min(self.sensor_values)
-            max_value = max(self.sensor_values)
-            
-            if max_value - min_value < 5 or min_value > 15:
-                self.drive_stop()
-                if self.steering_angle >= 90:
-                    self.steering_angle = 45
-                else:
-                    self.steering_angle = 135
-                    
-                self.drive_backward(self.speed)
-                time.sleep(self._time_sleep_backward)
-                self.steering_angle = 90
-                continue
-                
-            index = self.sensor_values.index(min_value)  
-            self.turn(index)             
-                
-            time.sleep(self._time_sleep_forward)        
-        self.drive_stop()           
+     
+    @property 
+    def forward_sleep_index(self) -> int:
+        return self._forward_sleep_index
+    
+    @property 
+    def backward_sleep_index(self) -> int:
+        return self._backward_sleep_index
+    
+    @property 
+    def distance_from_start_avoid(self) -> int:
+        return self._distance_from_start_avoid
+    
+    @sensor_values.setter
+    def sensor_values(self, value) -> None:
+        self._sensor_values = value       
         
     def final_run(self):
         self.emergency_stop = False        

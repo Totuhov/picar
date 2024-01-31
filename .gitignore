@@ -1,6 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-log/
 picar_c2c-main
 *.py[cod]
 *$py.class
