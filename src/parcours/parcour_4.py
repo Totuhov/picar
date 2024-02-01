@@ -74,6 +74,13 @@ class ParcourFour():
                 "obsticle_dist": car._distance,
                 "wheels_angle": car.steering_angle,
                 "direction": car.get_direction(),
-                "time": formatted_time
+                "time": formatted_time,
+                    "sensor_values": {
+                    "sensor1": 0,
+                    "sensor2": 0,
+                    "sensor3": 0,
+                    "sensor4": 0,
+                    "sensor5": 0,
                 }
+            }
             return data_obj

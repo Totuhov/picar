@@ -1,772 +1,716 @@
 [
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 90,
     "direction": "D",
-    "time": "14:44:32.529",
-    "sensor_values": {
-      "sensor1": 60,
-      "sensor2": 47,
-      "sensor3": 7,
-      "sensor4": 48,
-      "sensor5": 56
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:32.940",
-    "sensor_values": {
-      "sensor1": 59,
-      "sensor2": 49,
-      "sensor3": 7,
-      "sensor4": 44,
-      "sensor5": 54
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:33.352",
-    "sensor_values": {
-      "sensor1": 59,
-      "sensor2": 52,
-      "sensor3": 8,
-      "sensor4": 36,
-      "sensor5": 54
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:33.763",
-    "sensor_values": {
-      "sensor1": 60,
-      "sensor2": 53,
-      "sensor3": 12,
-      "sensor4": 28,
-      "sensor5": 55
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:34.173",
-    "sensor_values": {
-      "sensor1": 62,
-      "sensor2": 56,
-      "sensor3": 21,
-      "sensor4": 18,
-      "sensor5": 55
-    }
-  },
-  {
-    "speed": 0,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "P",
-    "time": "14:44:34.178",
-    "sensor_values": {
-      "sensor1": 62,
-      "sensor2": 56,
-      "sensor3": 21,
-      "sensor4": 18,
-      "sensor5": 55
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:34.998",
-    "sensor_values": {
-      "sensor1": 51,
-      "sensor2": 7,
-      "sensor3": 49,
-      "sensor4": 61,
-      "sensor5": 57
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 67,
-    "direction": "D",
-    "time": "14:44:35.410",
-    "sensor_values": {
-      "sensor1": 59,
-      "sensor2": 24,
-      "sensor3": 14,
-      "sensor4": 58,
-      "sensor5": 56
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:35.820",
-    "sensor_values": {
-      "sensor1": 59,
-      "sensor2": 41,
-      "sensor3": 7,
-      "sensor4": 56,
-      "sensor5": 57
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:36.232",
-    "sensor_values": {
-      "sensor1": 60,
-      "sensor2": 39,
-      "sensor3": 7,
-      "sensor4": 56,
-      "sensor5": 56
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:36.643",
-    "sensor_values": {
-      "sensor1": 55,
-      "sensor2": 18,
-      "sensor3": 15,
-      "sensor4": 59,
-      "sensor5": 57
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:37.054",
+    "time": "11:12:44.666",
     "sensor_values": {
       "sensor1": 50,
-      "sensor2": 6,
-      "sensor3": 47,
-      "sensor4": 61,
-      "sensor5": 56
+      "sensor2": 44,
+      "sensor3": 44,
+      "sensor4": 10,
+      "sensor5": 27
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 67,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
     "direction": "D",
-    "time": "14:44:37.465",
+    "time": "11:12:45.077",
     "sensor_values": {
-      "sensor1": 31,
-      "sensor2": 10,
-      "sensor3": 54,
-      "sensor4": 61,
-      "sensor5": 56
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 67,
-    "direction": "D",
-    "time": "14:44:37.877",
-    "sensor_values": {
-      "sensor1": 10,
-      "sensor2": 26,
-      "sensor3": 56,
-      "sensor4": 61,
-      "sensor5": 56
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:38.290",
-    "sensor_values": {
-      "sensor1": 15,
-      "sensor2": 18,
-      "sensor3": 55,
-      "sensor4": 61,
-      "sensor5": 56
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:38.703",
-    "sensor_values": {
-      "sensor1": 35,
-      "sensor2": 8,
-      "sensor3": 52,
-      "sensor4": 59,
-      "sensor5": 55
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 67,
-    "direction": "D",
-    "time": "14:44:39.114",
-    "sensor_values": {
-      "sensor1": 52,
-      "sensor2": 14,
-      "sensor3": 22,
-      "sensor4": 57,
-      "sensor5": 53
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 67,
-    "direction": "D",
-    "time": "14:44:39.525",
-    "sensor_values": {
-      "sensor1": 52,
-      "sensor2": 46,
-      "sensor3": 13,
-      "sensor4": 25,
-      "sensor5": 48
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:39.936",
-    "sensor_values": {
-      "sensor1": 51,
-      "sensor2": 47,
-      "sensor3": 48,
+      "sensor1": 48,
+      "sensor2": 42,
+      "sensor3": 42,
       "sensor4": 11,
       "sensor5": 24
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 112,
     "direction": "D",
-    "time": "14:44:40.360",
+    "time": "11:12:45.491",
     "sensor_values": {
-      "sensor1": 50,
-      "sensor2": 47,
-      "sensor3": 49,
-      "sensor4": 22,
-      "sensor5": 11
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 135,
-    "direction": "D",
-    "time": "14:44:40.773",
-    "sensor_values": {
-      "sensor1": 51,
-      "sensor2": 47,
-      "sensor3": 49,
-      "sensor4": 16,
-      "sensor5": 15
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 135,
-    "direction": "D",
-    "time": "14:44:41.184",
-    "sensor_values": {
-      "sensor1": 50,
-      "sensor2": 45,
-      "sensor3": 46,
-      "sensor4": 8,
-      "sensor5": 28
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:41.595",
-    "sensor_values": {
-      "sensor1": 49,
-      "sensor2": 45,
-      "sensor3": 41,
-      "sensor4": 7,
-      "sensor5": 35
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:42.006",
-    "sensor_values": {
-      "sensor1": 48,
-      "sensor2": 45,
-      "sensor3": 38,
-      "sensor4": 8,
-      "sensor5": 38
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:42.417",
-    "sensor_values": {
-      "sensor1": 47,
-      "sensor2": 44,
-      "sensor3": 29,
-      "sensor4": 9,
-      "sensor5": 40
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:42.827",
-    "sensor_values": {
-      "sensor1": 44,
+      "sensor1": 45,
       "sensor2": 39,
-      "sensor3": 9,
-      "sensor4": 26,
-      "sensor5": 42
+      "sensor3": 38,
+      "sensor4": 9,
+      "sensor5": 26
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
     "direction": "D",
-    "time": "14:44:43.238",
-    "sensor_values": {
-      "sensor1": 43,
-      "sensor2": 38,
-      "sensor3": 10,
-      "sensor4": 23,
-      "sensor5": 41
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:43.649",
+    "time": "11:12:45.903",
     "sensor_values": {
       "sensor1": 41,
-      "sensor2": 38,
-      "sensor3": 20,
-      "sensor4": 11,
-      "sensor5": 38
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:44.060",
-    "sensor_values": {
-      "sensor1": 39,
-      "sensor2": 35,
-      "sensor3": 20,
-      "sensor4": 9,
-      "sensor5": 35
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:44.471",
-    "sensor_values": {
-      "sensor1": 37,
-      "sensor2": 34,
-      "sensor3": 19,
-      "sensor4": 10,
-      "sensor5": 36
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 112,
-    "direction": "D",
-    "time": "14:44:44.882",
-    "sensor_values": {
-      "sensor1": 37,
-      "sensor2": 32,
-      "sensor3": 10,
-      "sensor4": 15,
-      "sensor5": 34
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:45.292",
-    "sensor_values": {
-      "sensor1": 34,
-      "sensor2": 28,
-      "sensor3": 6,
-      "sensor4": 25,
-      "sensor5": 33
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:45.710",
-    "sensor_values": {
-      "sensor1": 28,
-      "sensor2": 5,
-      "sensor3": 14,
-      "sensor4": 33,
-      "sensor5": 30
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 67,
-    "direction": "D",
-    "time": "14:44:46.132",
-    "sensor_values": {
-      "sensor1": 4,
-      "sensor2": 7,
-      "sensor3": 28,
-      "sensor4": 31,
-      "sensor5": 28
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:46.546",
-    "sensor_values": {
-      "sensor1": 5,
-      "sensor2": 20,
-      "sensor3": 26,
-      "sensor4": 28,
+      "sensor2": 36,
+      "sensor3": 35,
+      "sensor4": 7,
       "sensor5": 25
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
+    "direction": "D",
+    "time": "11:12:46.314",
+    "sensor_values": {
+      "sensor1": 38,
+      "sensor2": 32,
+      "sensor3": 31,
+      "sensor4": 6,
+      "sensor5": 26
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
+    "direction": "D",
+    "time": "11:12:46.724",
+    "sensor_values": {
+      "sensor1": 37,
+      "sensor2": 30,
+      "sensor3": 27,
+      "sensor4": 6,
+      "sensor5": 28
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
+    "direction": "D",
+    "time": "11:12:47.135",
+    "sensor_values": {
+      "sensor1": 38,
+      "sensor2": 31,
+      "sensor3": 19,
+      "sensor4": 8,
+      "sensor5": 31
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
+    "direction": "D",
+    "time": "11:12:47.546",
+    "sensor_values": {
+      "sensor1": 36,
+      "sensor2": 26,
+      "sensor3": 5,
+      "sensor4": 27,
+      "sensor5": 33
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:47.957",
+    "sensor_values": {
+      "sensor1": 27,
+      "sensor2": 4,
+      "sensor3": 24,
+      "sensor4": 35,
+      "sensor5": 33
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:12:48.368",
+    "sensor_values": {
+      "sensor1": 5,
+      "sensor2": 20,
+      "sensor3": 32,
+      "sensor4": 35,
+      "sensor5": 33
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 45,
     "direction": "D",
-    "time": "14:44:46.956",
+    "time": "11:12:48.779",
     "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 21,
-      "sensor3": 25,
-      "sensor4": 26,
-      "sensor5": 23
+      "sensor1": 19,
+      "sensor2": 28,
+      "sensor3": 32,
+      "sensor4": 35,
+      "sensor5": 33
     }
   },
   {
     "speed": 0,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 135,
     "direction": "P",
-    "time": "14:44:46.960",
+    "time": "11:12:48.783",
     "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 21,
-      "sensor3": 25,
-      "sensor4": 26,
+      "sensor1": 19,
+      "sensor2": 28,
+      "sensor3": 32,
+      "sensor4": 35,
+      "sensor5": 33
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:49.603",
+    "sensor_values": {
+      "sensor1": 37,
+      "sensor2": 31,
+      "sensor3": 28,
+      "sensor4": 6,
       "sensor5": 23
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 112,
     "direction": "D",
-    "time": "14:44:47.780",
+    "time": "11:12:50.014",
     "sensor_values": {
-      "sensor1": 28,
-      "sensor2": 24,
-      "sensor3": 13,
-      "sensor4": 4,
-      "sensor5": 21
+      "sensor1": 35,
+      "sensor2": 20,
+      "sensor3": 4,
+      "sensor4": 25,
+      "sensor5": 34
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:50.425",
+    "sensor_values": {
+      "sensor1": 6,
+      "sensor2": 23,
+      "sensor3": 32,
+      "sensor4": 35,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:50.841",
+    "sensor_values": {
+      "sensor1": 33,
+      "sensor2": 30,
+      "sensor3": 33,
+      "sensor4": 36,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 135,
+    "direction": "P",
+    "time": "11:12:50.845",
+    "sensor_values": {
+      "sensor1": 33,
+      "sensor2": 30,
+      "sensor3": 33,
+      "sensor4": 36,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:51.664",
+    "sensor_values": {
+      "sensor1": 37,
+      "sensor2": 27,
+      "sensor3": 5,
+      "sensor4": 9,
+      "sensor5": 32
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:52.075",
+    "sensor_values": {
+      "sensor1": 24,
+      "sensor2": 3,
+      "sensor3": 10,
+      "sensor4": 34,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:12:52.486",
+    "sensor_values": {
+      "sensor1": 14,
+      "sensor2": 29,
+      "sensor3": 34,
+      "sensor4": 37,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:52.897",
+    "sensor_values": {
+      "sensor1": 34,
+      "sensor2": 30,
+      "sensor3": 34,
+      "sensor4": 37,
+      "sensor5": 36
+    }
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 135,
+    "direction": "P",
+    "time": "11:12:52.901",
+    "sensor_values": {
+      "sensor1": 34,
+      "sensor2": 30,
+      "sensor3": 34,
+      "sensor4": 37,
+      "sensor5": 36
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:53.721",
+    "sensor_values": {
+      "sensor1": 36,
+      "sensor2": 23,
+      "sensor3": 4,
+      "sensor4": 14,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:54.132",
+    "sensor_values": {
+      "sensor1": 24,
+      "sensor2": 4,
+      "sensor3": 15,
+      "sensor4": 36,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:12:54.547",
+    "sensor_values": {
+      "sensor1": 11,
+      "sensor2": 29,
+      "sensor3": 33,
+      "sensor4": 36,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:54.957",
+    "sensor_values": {
+      "sensor1": 31,
+      "sensor2": 30,
+      "sensor3": 33,
+      "sensor4": 35,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 135,
+    "direction": "P",
+    "time": "11:12:54.961",
+    "sensor_values": {
+      "sensor1": 31,
+      "sensor2": 30,
+      "sensor3": 33,
+      "sensor4": 35,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:55.781",
+    "sensor_values": {
+      "sensor1": 6,
+      "sensor2": 27,
+      "sensor3": 33,
+      "sensor4": 36,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:56.192",
+    "sensor_values": {
+      "sensor1": 27,
+      "sensor2": 29,
+      "sensor3": 33,
+      "sensor4": 35,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 0,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 135,
+    "direction": "P",
+    "time": "11:12:56.196",
+    "sensor_values": {
+      "sensor1": 27,
+      "sensor2": 29,
+      "sensor3": 33,
+      "sensor4": 35,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:57.017",
+    "sensor_values": {
+      "sensor1": 36,
+      "sensor2": 28,
+      "sensor3": 8,
+      "sensor4": 11,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:57.427",
+    "sensor_values": {
+      "sensor1": 35,
+      "sensor2": 12,
+      "sensor3": 6,
+      "sensor4": 34,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:12:57.838",
+    "sensor_values": {
+      "sensor1": 5,
+      "sensor2": 21,
+      "sensor3": 33,
+      "sensor4": 36,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:58.252",
+    "sensor_values": {
+      "sensor1": 6,
+      "sensor2": 26,
+      "sensor3": 34,
+      "sensor4": 37,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:58.662",
+    "sensor_values": {
+      "sensor1": 6,
+      "sensor2": 20,
+      "sensor3": 33,
+      "sensor4": 36,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 45,
+    "direction": "D",
+    "time": "11:12:59.073",
+    "sensor_values": {
+      "sensor1": 18,
+      "sensor2": 7,
+      "sensor3": 30,
+      "sensor4": 35,
+      "sensor5": 35
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:12:59.484",
+    "sensor_values": {
+      "sensor1": 31,
+      "sensor2": 5,
+      "sensor3": 25,
+      "sensor4": 34,
+      "sensor5": 34
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:12:59.895",
+    "sensor_values": {
+      "sensor1": 33,
+      "sensor2": 17,
+      "sensor3": 6,
+      "sensor4": 31,
+      "sensor5": 33
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:00.306",
+    "sensor_values": {
+      "sensor1": 33,
+      "sensor2": 22,
+      "sensor3": 5,
+      "sensor4": 28,
+      "sensor5": 32
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:00.717",
+    "sensor_values": {
+      "sensor1": 32,
+      "sensor2": 24,
+      "sensor3": 5,
+      "sensor4": 20,
+      "sensor5": 29
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:01.141",
+    "sensor_values": {
+      "sensor1": 31,
+      "sensor2": 24,
+      "sensor3": 6,
+      "sensor4": 14,
+      "sensor5": 28
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:01.555",
+    "sensor_values": {
+      "sensor1": 31,
+      "sensor2": 23,
+      "sensor3": 9,
+      "sensor4": 9,
+      "sensor5": 23
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:01.965",
+    "sensor_values": {
+      "sensor1": 30,
+      "sensor2": 24,
+      "sensor3": 18,
+      "sensor4": 6,
+      "sensor5": 25
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 112,
     "direction": "D",
-    "time": "14:44:48.191",
+    "time": "11:13:02.376",
     "sensor_values": {
-      "sensor1": 25,
-      "sensor2": 6,
-      "sensor3": 3,
+      "sensor1": 29,
+      "sensor2": 22,
+      "sensor3": 7,
+      "sensor4": 10,
+      "sensor5": 26
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:02.787",
+    "sensor_values": {
+      "sensor1": 31,
+      "sensor2": 19,
+      "sensor3": 4,
+      "sensor4": 21,
+      "sensor5": 26
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:03.198",
+    "sensor_values": {
+      "sensor1": 29,
+      "sensor2": 15,
+      "sensor3": 4,
+      "sensor4": 24,
+      "sensor5": 26
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 90,
+    "direction": "D",
+    "time": "11:13:03.609",
+    "sensor_values": {
+      "sensor1": 26,
+      "sensor2": 5,
+      "sensor3": 10,
+      "sensor4": 24,
+      "sensor5": 26
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:13:04.019",
+    "sensor_values": {
+      "sensor1": 26,
+      "sensor2": 5,
+      "sensor3": 9,
+      "sensor4": 24,
+      "sensor5": 25
+    }
+  },
+  {
+    "speed": 20,
+    "obsticle_dist": 92.33333333333333,
+    "wheels_angle": 67,
+    "direction": "D",
+    "time": "11:13:04.430",
+    "sensor_values": {
+      "sensor1": 24,
+      "sensor2": 3,
+      "sensor3": 13,
       "sensor4": 24,
       "sensor5": 24
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:48.602",
-    "sensor_values": {
-      "sensor1": 11,
-      "sensor2": 20,
-      "sensor3": 25,
-      "sensor4": 26,
-      "sensor5": 23
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:49.013",
-    "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 20,
-      "sensor3": 23,
-      "sensor4": 24,
-      "sensor5": 21
-    }
-  },
-  {
-    "speed": 0,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 135,
-    "direction": "P",
-    "time": "14:44:49.018",
-    "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 20,
-      "sensor3": 23,
-      "sensor4": 24,
-      "sensor5": 21
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:49.838",
-    "sensor_values": {
-      "sensor1": 24,
-      "sensor2": 7,
-      "sensor3": 2,
-      "sensor4": 20,
-      "sensor5": 23
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:50.249",
-    "sensor_values": {
-      "sensor1": 2,
-      "sensor2": 3,
-      "sensor3": 23,
-      "sensor4": 26,
-      "sensor5": 23
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:50.660",
-    "sensor_values": {
-      "sensor1": 14,
-      "sensor2": 20,
-      "sensor3": 23,
-      "sensor4": 25,
-      "sensor5": 21
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:51.071",
-    "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 19,
-      "sensor3": 22,
-      "sensor4": 23,
-      "sensor5": 20
-    }
-  },
-  {
-    "speed": 0,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 135,
-    "direction": "P",
-    "time": "14:44:51.075",
-    "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 19,
-      "sensor3": 22,
-      "sensor4": 23,
-      "sensor5": 20
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:51.894",
-    "sensor_values": {
-      "sensor1": 26,
-      "sensor2": 19,
-      "sensor3": 3,
-      "sensor4": 6,
-      "sensor5": 21
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 90,
-    "direction": "D",
-    "time": "14:44:52.305",
-    "sensor_values": {
-      "sensor1": 22,
-      "sensor2": 3,
-      "sensor3": 8,
-      "sensor4": 24,
-      "sensor5": 22
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 67,
     "direction": "D",
-    "time": "14:44:52.716",
+    "time": "11:13:04.843",
     "sensor_values": {
-      "sensor1": 4,
-      "sensor2": 11,
-      "sensor3": 23,
-      "sensor4": 24,
-      "sensor5": 21
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:53.127",
-    "sensor_values": {
-      "sensor1": 3,
-      "sensor2": 18,
-      "sensor3": 22,
-      "sensor4": 23,
-      "sensor5": 20
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:53.538",
-    "sensor_values": {
-      "sensor1": 3,
-      "sensor2": 17,
-      "sensor3": 22,
-      "sensor4": 22,
-      "sensor5": 20
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:53.949",
-    "sensor_values": {
-      "sensor1": 3,
-      "sensor2": 16,
-      "sensor3": 22,
-      "sensor4": 23,
-      "sensor5": 20
-    }
-  },
-  {
-    "speed": 20,
-    "obsticle_dist": 163.66666666666666,
-    "wheels_angle": 45,
-    "direction": "D",
-    "time": "14:44:54.360",
-    "sensor_values": {
-      "sensor1": 3,
-      "sensor2": 11,
+      "sensor1": 5,
+      "sensor2": 5,
       "sensor3": 21,
-      "sensor4": 22,
-      "sensor5": 20
+      "sensor4": 23,
+      "sensor5": 24
     }
   },
   {
     "speed": 20,
-    "obsticle_dist": 163.66666666666666,
+    "obsticle_dist": 92.33333333333333,
     "wheels_angle": 45,
     "direction": "D",
-    "time": "14:44:54.762",
+    "time": "11:13:04.846",
     "sensor_values": {
-      "sensor1": 3,
-      "sensor2": 11,
+      "sensor1": 5,
+      "sensor2": 5,
       "sensor3": 21,
-      "sensor4": 22,
-      "sensor5": 20
+      "sensor4": 23,
+      "sensor5": 24
     }
   }
 ]

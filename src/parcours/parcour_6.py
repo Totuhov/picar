@@ -4,18 +4,18 @@ from utilities.timer import Timer
 
 class ParcourSix():
     
-    def __init__(self, car = SensorCar):
+    def __init__(self, car = SensorCar, speed: int = 20):
         self._car = car
+        self._speed = speed
         
     def run(self):
         c = self._car
-        c.emergency_stop = False        
-        c.set_speed(20)
+        c.emergency_stop = False
         ds = c._data_service
         
         self._timer = Timer(c)
-        self._time_sleep_forward = c.forward_sleep_index / c.get_speed()
-        self._time_sleep_backward = c.backward_sleep_index / c.get_speed()
+        self._time_sleep_forward = c.forward_sleep_index / self._speed
+        self._time_sleep_backward = c.backward_sleep_index / self._speed
     
         try:   
             for _ in range(50):
@@ -26,7 +26,7 @@ class ParcourSix():
                 if c._distance < c.distance_from_start_avoid:
                     c.obsticle_detected_mode()
                 
-                c.drive_forward(20)
+                c.drive_forward(self._speed)
                 c.sensor_values = c.sensor.read_analog()
                 
                 min_value = min(c.sensor_values)
@@ -41,7 +41,7 @@ class ParcourSix():
                         c.steering_angle = 135
                         
                     ds.write_data(self.create_data(c))                        
-                    c.drive_backward(20)
+                    c.drive_backward(self._speed)
                     self._timer.timer(self._time_sleep_backward)
                     c.steering_angle = 90
                     continue
