@@ -117,6 +117,7 @@ def run3(n_clicks):
      if n_clicks is not None:
         try:
             p3(car).run()
+            car.steerin_angle = 90            
             
         except Exception as ex:
             print(f"Something's wrong! {ex}")
@@ -134,7 +135,7 @@ def run4(n_clicks):
             car.steerin_angle = 90
             data = data_service.read_data()
             
-            df_ultra = pd.DataFrame(data)            
+            df = pd.DataFrame(data)            
            
             all_graph = {
                 'data': [
@@ -157,7 +158,7 @@ def run4(n_clicks):
  
 @app.callback(
     Output(component_id="all-graph", component_property="figure", allow_duplicate=True),
-    Output(component_id="sensors", component_property="figure", allow_duplicate=True),
+    Output(component_id="sensors", component_property="figure"),
     [Input(component_id="f5_btn", component_property="n_clicks")],
     prevent_initial_call=True
 )
@@ -264,10 +265,11 @@ def run6(n_clicks):
 def stop(n_clicks):
      if n_clicks is not None:
         try:
-            car.emergency_stop = True
+            car.emergency_stop = True            
                        
         except Exception as ex:
             print(f"Something's wrong! {ex}")
             car.drive_stop() 
+            
 if __name__ == '__main__':
     app.run_server(debug=True)

@@ -12,6 +12,7 @@ class ParcourFive():
         c = self._car
         c.emergency_stop = False     
         ds = c._data_service
+        ds.clear_data()
         
         self._timer = Timer(c)
         self._time_sleep_forward = c.forward_sleep_index / self._speed

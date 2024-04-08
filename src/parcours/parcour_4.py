@@ -20,6 +20,7 @@ class ParcourFour():
         c.set_speed(init_speed)
         c.drive_forward(c.get_speed())        
         ds = c._data_service
+        ds.clear_data()
         
         try:
             for i in range(loops):
