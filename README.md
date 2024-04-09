@@ -1,10 +1,25 @@
 # picar
+-   **[Important Tips](#tips)**
 
 -   **[About](#about)**
 
 -   **[Documentation](#documentation)**
 
 -   **[Configuration](#configjson)**
+
+## Tips
+
+1. Importing modules from different file locations
+go tho the main file where the modules should be imporded
+open Terminal
+navigate to the desired location witch should be imported
+
+"pwd" to get the location
+
+export PYTHONPATH=/home/nikolay/picar/{location}:${PYTHONPATH}
+
+now you have this location into system's paths
+more information on https://www.youtube.com/watch?v=HNChkuE6HyA
 
 ## About
 
