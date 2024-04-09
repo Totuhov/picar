@@ -5,14 +5,14 @@ class BaseCar():
     Fahrparcour 1: Forward and backward
     Fahrparcour 2: Driving in a circle with maximum steering angle   
     '''
-    def __init__(self):             
+    def __init__(self, config="./settings/config.json"):             
         
         self._steering_angle = 90 
         self._speed = 0
         self._direction = "P" 
         self._emergency_stop = False
         
-        with open("config.json", "r") as f:
+        with open(config, "r") as f:
             data = json.load(f)
             turning_offset = data["turning_offset"]
             forward_A = data["forward_A"]

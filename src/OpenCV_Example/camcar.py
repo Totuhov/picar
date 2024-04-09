@@ -1,3 +1,5 @@
+from basecar import BaseCar
+from basisklassen_cam import Camera
 import time
 import image_processing as ip
 import numpy as np
@@ -6,11 +8,7 @@ from datetime import datetime
 import uuid
 import os
 
-from car_sensor import SensorCar
-from basisklassen_cam import Camera
-
-
-class CamCar(SensorCar):
+class CamCar(BaseCar):
     def __init__(self, config="/home/pi/Desktop/camp2code/Software/config.json"):
         super().__init__(config)
         self.speed = 30

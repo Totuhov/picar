@@ -15,7 +15,7 @@ class SensorCar(SonicCar):
     def __init__(self):
         super().__init__()
         
-        with open("config.json", "r") as f:
+        with open("./settings/config.json", "r") as f:
             self.settings = json.load(f)         
               
         self._sensor_values = self.sensor.read_analog()
