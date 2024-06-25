@@ -9,7 +9,7 @@ import uuid
 import os
 
 class CamCar(BaseCar):
-    def __init__(self, config="config.json"):
+    def __init__(self, config="/home/nikolay/picar/src/config.json"):
         super().__init__(config)
         self.speed = 30
         self.cam = Camera()

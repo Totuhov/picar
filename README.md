@@ -11,7 +11,9 @@
 
 1. Importing modules from different file locations
 go tho the main file where the modules should be imporded
+
 open Terminal
+
 navigate to the desired location witch should be imported
 
 "pwd" to get the location

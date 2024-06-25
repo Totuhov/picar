@@ -5,7 +5,7 @@ class BaseCar():
     Fahrparcour 1: Forward and backward
     Fahrparcour 2: Driving in a circle with maximum steering angle   
     '''
-    def __init__(self, config="./settings/config.json"):             
+    def __init__(self, config="/home/nikolay/picar/src/config.json"):             
         
         self._steering_angle = 90 
         self._speed = 0

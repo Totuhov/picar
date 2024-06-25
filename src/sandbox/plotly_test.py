@@ -1,9 +1,16 @@
 from dash import Dash, dcc, html, Input, Output, callback
 import sys
 import basisklassen_cam as bc
+from camcar import CamCar
+from flask import Flask, Response
+import numpy as np
+import matplotlib.pylab as plt
+import tensorflow as tf
 
+server = Flask(__name__)
 app = Dash(__name__)
 cam = bc.Camera()
+car = CamCar()
 
 
 
